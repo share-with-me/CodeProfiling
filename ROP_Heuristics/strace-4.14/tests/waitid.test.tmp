@@ -1,0 +1,9 @@
+waitid(P_PID, 27725, NULL, WNOHANG|WEXITED, NULL) = 0
+waitid(P_PID, 27725, {}, WNOHANG|WEXITED|WSTOPPED, {ru_utime={18446744073709551615, 18446744073709551615}, ru_stime={18446744073709551615, 18446744073709551615}, ...}) = 0
+waitid(P_PID, 27725, {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=27725, si_uid=0, si_status=42, si_utime=0, si_stime=0}, WEXITED, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+waitid(P_PID, 27726, {si_signo=SIGCHLD, si_code=CLD_KILLED, si_pid=27726, si_uid=0, si_status=SIGUSR1, si_utime=0, si_stime=0}, WEXITED, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+waitid(P_PID, 27727, {si_signo=SIGCHLD, si_code=CLD_STOPPED, si_pid=27727, si_uid=0, si_status=SIGSTOP, si_utime=0, si_stime=0}, WSTOPPED, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+waitid(P_PID, 27727, {si_signo=SIGCHLD, si_code=CLD_CONTINUED, si_pid=27727, si_uid=0, si_status=SIGCONT, si_utime=0, si_stime=0}, WCONTINUED, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+waitid(P_PID, 27727, {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=27727, si_uid=0, si_status=0, si_utime=0, si_stime=0}, WEXITED, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+waitid(P_ALL, -1, 0x7f845be82f80, WEXITED|WSTOPPED, 0x7f845be7cf70) = -1 ECHILD (No child processes)
++++ exited with 0 +++

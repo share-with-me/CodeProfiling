@@ -1,0 +1,9 @@
+mknod("mknod", 000) = -1 EEXIST (File exists)
+mknod("mknod", 0177777) = -1 EINVAL (Invalid argument)
+mknod("mknod", S_IFREG|000) = -1 EEXIST (File exists)
+mknod("mknod", S_IFDIR|006) = -1 EPERM (Operation not permitted)
+mknod("mknod", S_IFLNK|060) = -1 EINVAL (Invalid argument)
+mknod("mknod", S_IFIFO|0600) = -1 EEXIST (File exists)
+mknod("mknod", S_IFCHR|024, makedev(1, 7)) = -1 EEXIST (File exists)
+mknod("mknod", S_IFBLK|S_ISUID|S_ISGID|S_ISVTX|0777, makedev(3085, 765421)) = -1 EEXIST (File exists)
++++ exited with 0 +++

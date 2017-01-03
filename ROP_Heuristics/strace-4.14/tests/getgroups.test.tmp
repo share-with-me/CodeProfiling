@@ -1,0 +1,11 @@
+getgroups(0, NULL) = 1
+getgroups(0, NULL) = 1
+getgroups(4294967295, NULL) = -1 EINVAL (Invalid argument)
+getgroups(4294967295, NULL) = -1 EINVAL (Invalid argument)
+getgroups(65536, NULL) = -1 EFAULT (Bad address)
+getgroups(65536, NULL) = -1 EFAULT (Bad address)
+getgroups(1, [0]) = 1
+getgroups(2, [0]) = 1
+getgroups(2, [0]) = 1
+getgroups(1, 0x7f9bb717b000) = -1 EFAULT (Bad address)
++++ exited with 0 +++

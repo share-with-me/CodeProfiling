@@ -1,0 +1,19 @@
+setgroups(0, NULL) = 0
+setgroups(0, NULL) = 0
+setgroups(1, NULL) = -1 EFAULT (Bad address)
+setgroups(1, NULL) = -1 EFAULT (Bad address)
+setgroups(4294967295, NULL) = -1 EINVAL (Invalid argument)
+setgroups(4294967295, NULL) = -1 EINVAL (Invalid argument)
+setgroups(0, []) = 0
+setgroups(1, [4294967295]) = -1 EINVAL (Invalid argument)
+setgroups(1, 0x7fb5bf7de000) = -1 EFAULT (Bad address)
+setgroups(1, 0xffffffffffffffff) = -1 EFAULT (Bad address)
+setgroups(2, [4294967295, 0x7fb5bf7de000]) = -1 EINVAL (Invalid argument)
+setgroups(2, [4294967294, 4294967293]) = 0
+setgroups(3, [4294967294, 4294967293, 0x7fb5bf7d8000]) = -1 EFAULT (Bad address)
+setgroups(3, [0, 1, ...]) = -1 EINVAL (Invalid argument)
+setgroups(4, [0, 1, ...]) = -1 EINVAL (Invalid argument)
+setgroups(65536, [0, 1, ...]) = -1 EINVAL (Invalid argument)
+setgroups(65536, [0, 1, ...]) = -1 EINVAL (Invalid argument)
+setgroups(65537, 0x7fb5bf7d1ff4) = -1 EINVAL (Invalid argument)
++++ exited with 0 +++

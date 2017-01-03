@@ -1,0 +1,17 @@
+prlimit64(25604, RLIMIT_AS, NULL, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+prlimit64(25604, RLIMIT_CORE, NULL, {rlim_cur=0, rlim_max=RLIM64_INFINITY}) = 0
+prlimit64(25604, RLIMIT_CPU, NULL, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+prlimit64(25604, RLIMIT_DATA, NULL, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+prlimit64(25604, RLIMIT_FSIZE, NULL, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+prlimit64(25604, RLIMIT_LOCKS, NULL, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+prlimit64(25604, RLIMIT_MEMLOCK, NULL, {rlim_cur=64*1024, rlim_max=64*1024}) = 0
+prlimit64(25604, RLIMIT_MSGQUEUE, NULL, {rlim_cur=800*1024, rlim_max=800*1024}) = 0
+prlimit64(25604, RLIMIT_NICE, NULL, {rlim_cur=0, rlim_max=0}) = 0
+prlimit64(25604, RLIMIT_NOFILE, NULL, {rlim_cur=64*1024, rlim_max=64*1024}) = 0
+prlimit64(25604, RLIMIT_NPROC, NULL, {rlim_cur=15338, rlim_max=15338}) = 0
+prlimit64(25604, RLIMIT_RSS, NULL, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+prlimit64(25604, RLIMIT_RTPRIO, NULL, {rlim_cur=0, rlim_max=0}) = 0
+prlimit64(25604, RLIMIT_RTTIME, NULL, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+prlimit64(25604, RLIMIT_SIGPENDING, NULL, {rlim_cur=15338, rlim_max=15338}) = 0
+prlimit64(25604, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
++++ exited with 0 +++

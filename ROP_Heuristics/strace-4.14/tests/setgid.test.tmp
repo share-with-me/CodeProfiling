@@ -1,0 +1,5 @@
+setgid(0) = 0
+setgid(0) = 0
+setgid(-1) = -1 EINVAL (Invalid argument)
+setgid(-1) = -1 EINVAL (Invalid argument)
++++ exited with 0 +++

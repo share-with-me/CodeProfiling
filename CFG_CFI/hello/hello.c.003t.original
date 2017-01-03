@@ -1,0 +1,20 @@
+
+;; Function main (null)
+;; enabled by -tree-original
+
+
+{
+  int x = 10;
+
+    int x = 10;
+  if (x == 10)
+    {
+      printf ((const char * restrict) "Allowed!\n");
+    }
+  else
+    {
+      printf ((const char * restrict) "Who are you?\n");
+    }
+  return 0;
+}
+

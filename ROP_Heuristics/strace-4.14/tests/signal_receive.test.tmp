@@ -1,0 +1,59 @@
+kill(28929, SIGHUP) = 0
+--- SIGHUP {si_signo=SIGHUP, si_code=SI_USER, si_pid=28929, si_uid=0} ---
+kill(28929, SIGINT) = 0
+--- SIGINT {si_signo=SIGINT, si_code=SI_USER, si_pid=28929, si_uid=0} ---
+kill(28929, SIGQUIT) = 0
+--- SIGQUIT {si_signo=SIGQUIT, si_code=SI_USER, si_pid=28929, si_uid=0} ---
+kill(28929, SIGILL) = 0
+--- SIGILL {si_signo=SIGILL, si_code=SI_USER, si_pid=28929, si_uid=0} ---
+kill(28929, SIGTRAP) = 0
+--- SIGTRAP {si_signo=SIGTRAP, si_code=SI_USER, si_pid=28929, si_uid=0} ---
+kill(28929, SIGABRT) = 0
+--- SIGABRT {si_signo=SIGABRT, si_code=SI_USER, si_pid=28929, si_uid=0} ---
+kill(28929, SIGBUS) = 0
+--- SIGBUS {si_signo=SIGBUS, si_code=SI_USER, si_pid=28929, si_uid=0} ---
+kill(28929, SIGFPE) = 0
+--- SIGFPE {si_signo=SIGFPE, si_code=SI_USER, si_pid=28929, si_uid=0} ---
+kill(28929, SIGUSR1) = 0
+--- SIGUSR1 {si_signo=SIGUSR1, si_code=SI_USER, si_pid=28929, si_uid=0} ---
+kill(28929, SIGSEGV) = 0
+--- SIGSEGV {si_signo=SIGSEGV, si_code=SI_USER, si_pid=28929, si_uid=0} ---
+kill(28929, SIGUSR2) = 0
+--- SIGUSR2 {si_signo=SIGUSR2, si_code=SI_USER, si_pid=28929, si_uid=0} ---
+kill(28929, SIGPIPE) = 0
+--- SIGPIPE {si_signo=SIGPIPE, si_code=SI_USER, si_pid=28929, si_uid=0} ---
+kill(28929, SIGALRM) = 0
+--- SIGALRM {si_signo=SIGALRM, si_code=SI_USER, si_pid=28929, si_uid=0} ---
+kill(28929, SIGTERM) = 0
+--- SIGTERM {si_signo=SIGTERM, si_code=SI_USER, si_pid=28929, si_uid=0} ---
+kill(28929, SIGSTKFLT) = 0
+--- SIGSTKFLT {si_signo=SIGSTKFLT, si_code=SI_USER, si_pid=28929, si_uid=0} ---
+kill(28929, SIGCHLD) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=SI_USER, si_pid=28929, si_uid=0} ---
+kill(28929, SIGCONT) = 0
+--- SIGCONT {si_signo=SIGCONT, si_code=SI_USER, si_pid=28929, si_uid=0} ---
+kill(28929, SIGTSTP) = 0
+--- SIGTSTP {si_signo=SIGTSTP, si_code=SI_USER, si_pid=28929, si_uid=0} ---
+kill(28929, SIGTTIN) = 0
+--- SIGTTIN {si_signo=SIGTTIN, si_code=SI_USER, si_pid=28929, si_uid=0} ---
+kill(28929, SIGTTOU) = 0
+--- SIGTTOU {si_signo=SIGTTOU, si_code=SI_USER, si_pid=28929, si_uid=0} ---
+kill(28929, SIGURG) = 0
+--- SIGURG {si_signo=SIGURG, si_code=SI_USER, si_pid=28929, si_uid=0} ---
+kill(28929, SIGXCPU) = 0
+--- SIGXCPU {si_signo=SIGXCPU, si_code=SI_USER, si_pid=28929, si_uid=0} ---
+kill(28929, SIGXFSZ) = 0
+--- SIGXFSZ {si_signo=SIGXFSZ, si_code=SI_USER, si_pid=28929, si_uid=0} ---
+kill(28929, SIGVTALRM) = 0
+--- SIGVTALRM {si_signo=SIGVTALRM, si_code=SI_USER, si_pid=28929, si_uid=0} ---
+kill(28929, SIGPROF) = 0
+--- SIGPROF {si_signo=SIGPROF, si_code=SI_USER, si_pid=28929, si_uid=0} ---
+kill(28929, SIGWINCH) = 0
+--- SIGWINCH {si_signo=SIGWINCH, si_code=SI_USER, si_pid=28929, si_uid=0} ---
+kill(28929, SIGIO) = 0
+--- SIGIO {si_signo=SIGIO, si_code=SI_USER, si_pid=28929, si_uid=0} ---
+kill(28929, SIGPWR) = 0
+--- SIGPWR {si_signo=SIGPWR, si_code=SI_USER, si_pid=28929, si_uid=0} ---
+kill(28929, SIGSYS) = 0
+--- SIGSYS {si_signo=SIGSYS, si_code=SI_USER, si_pid=28929, si_uid=0} ---
++++ exited with 0 +++

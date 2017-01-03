@@ -1,0 +1,7 @@
+shmat(-38177487, 0xdec0ded1dec0ded2, SHM_REMAP|SHM_RDONLY|SHM_RND|0xffff8ace) = -1 EINVAL (Invalid argument)
+shmat(20742189, NULL, SHM_REMAP) = -1 EINVAL (Invalid argument)
+shmat(20742189, NULL, SHM_RDONLY) = 0x7fb9e1a65000
+shmdt(NULL) = -1 EINVAL (Invalid argument)
+shmdt(0x7fb9e1a65000) = 0
+shmat(20742189, 0x7fb9e1a65001, SHM_RND) = 0x7fb9e1a65000
++++ exited with 0 +++

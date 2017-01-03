@@ -1,0 +1,2 @@
+renameat2(-1, "renameat2_oldpath", AT_FDCWD, "renameat2_newpath", RENAME_NOREPLACE) = -1 EBADF (Bad file descriptor)
++++ exited with 0 +++

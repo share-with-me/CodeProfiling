@@ -1,0 +1,4 @@
+timerfd_create(CLOCK_MONOTONIC, TFD_CLOEXEC|TFD_NONBLOCK) = 0
+timerfd_settime(0, 0, {it_interval={233811169, 233811170}, it_value={233811171, 233811172}}, {it_interval={0, 0}, it_value={0, 0}}) = 0
+timerfd_gettime(0, {it_interval={233811169, 233811170}, it_value={233811171, 233776788}}) = 0
++++ exited with 0 +++

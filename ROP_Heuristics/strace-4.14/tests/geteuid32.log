@@ -1,0 +1,2 @@
+undefined: __NR_geteuid32
+geteuid32.test: skipped test: ./geteuid32 exited with code 77

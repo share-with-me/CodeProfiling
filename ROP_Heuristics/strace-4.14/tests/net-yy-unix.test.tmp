@@ -1,0 +1,27 @@
+close(3</etc/ld.so.cache>) = 0
+close(3</lib/x86_64-linux-gnu/libc-2.19.so>) = 0
+socket(AF_UNIX, SOCK_STREAM, 0) = 3<UNIX:[123565]>
+bind(3<UNIX:[123565]>, {sa_family=AF_UNIX, sun_path="net-yy-unix-local-stream"}, 27) = 0
+listen(3<UNIX:[123565,"net-yy-unix-local-stream"]>, 1) = 0
+getsockopt(3<UNIX:[123565,"net-yy-unix-local-stream"]>, SOL_SOCKET, SO_PASSCRED, [0], [4]) = 0
+getsockname(3<UNIX:[123565,"net-yy-unix-local-stream"]>, {sa_family=AF_UNIX, sun_path="net-yy-unix-local-stream"}, [110->27]) = 0
+socket(AF_UNIX, SOCK_STREAM, 0) = 4<UNIX:[123566]>
+connect(4<UNIX:[123566]>, {sa_family=AF_UNIX, sun_path="net-yy-unix-local-stream"}, 27) = 0
+accept(3<UNIX:[123565,"net-yy-unix-local-stream"]>, {sa_family=AF_UNIX}, [110->2]) = 5<UNIX:[123567->123566,"net-yy-unix-local-stream"]>
+getpeername(4<UNIX:[123566->123567]>, {sa_family=AF_UNIX, sun_path="net-yy-unix-local-stream"}, [110->27]) = 0
+sendto(4<UNIX:[123566->123567]>, "text", 4, MSG_DONTWAIT, NULL, 0) = 4
+recvfrom(5<UNIX:[123567->123566,"net-yy-unix-local-stream"]>, "text", 4, MSG_DONTWAIT, NULL, NULL) = 4
+close(4<UNIX:[123566->123567]>) = 0
+close(5<UNIX:[123567->123566,"net-yy-unix-local-stream"]>) = 0
+socket(AF_UNIX, SOCK_STREAM, 0) = 4<UNIX:[123568]>
+setsockopt(4<UNIX:[123568]>, SOL_SOCKET, SO_PASSCRED, [1], 4) = 0
+getsockname(3<UNIX:[123565,"net-yy-unix-local-stream"]>, {sa_family=AF_UNIX, sun_path="net-yy-unix-local-stream"}, [110->27]) = 0
+connect(4<UNIX:[123568]>, {sa_family=AF_UNIX, sun_path="net-yy-unix-local-stream"}, 27) = 0
+accept(3<UNIX:[123565,"net-yy-unix-local-stream"]>, {sa_family=AF_UNIX, sun_path=@"00080"}, [110->8]) = 5<UNIX:[123569->123568,"net-yy-unix-local-stream"]>
+getpeername(4<UNIX:[123568->123569,@"00080"]>, {sa_family=AF_UNIX, sun_path="net-yy-unix-local-stream"}, [110->27]) = 0
+sendto(4<UNIX:[123568->123569,@"00080"]>, "text", 4, MSG_DONTWAIT, NULL, 0) = 4
+recvfrom(5<UNIX:[123569->123568,"net-yy-unix-local-stream"]>, "text", 4, MSG_DONTWAIT, NULL, NULL) = 4
+close(4<UNIX:[123568->123569,@"00080"]>) = 0
+close(5<UNIX:[123569->123568,"net-yy-unix-local-stream"]>) = 0
+close(3<UNIX:[123565,"net-yy-unix-local-stream"]>) = 0
++++ exited with 0 +++

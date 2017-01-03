@@ -1,0 +1,11 @@
+setresuid(0, 0, 0) = 0
+setresuid(0, 0, 0) = 0
+setresuid(0, 0, 0) = 0
+setresuid(0, 0, 0) = 0
+setresuid(-1, 0, 0) = 0
+setresuid(0, -1, 0) = 0
+setresuid(0, 0, -1) = 0
+setresuid(-1, 0, 0) = 0
+setresuid(0, -1, 0) = 0
+setresuid(0, 0, -1) = 0
++++ exited with 0 +++

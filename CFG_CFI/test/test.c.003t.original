@@ -1,0 +1,32 @@
+
+;; Function helper_function (null)
+;; enabled by -tree-original
+
+
+{
+  printf ((const char * restrict) "I am a helper function\n");
+  return 42;
+}
+
+
+;; Function main (null)
+;; enabled by -tree-original
+
+
+{
+  int i;
+
+    int i;
+  printf ((const char * restrict) "argc: %i\n", argc);
+  i = 0;
+  goto <D.2206>;
+  <D.2205>:;
+  printf ((const char * restrict) "argv[%i]: %s\n", *(argv + (sizetype) ((long unsigned int) i * 8)));
+  i++ ;
+  <D.2206>:;
+  if (i < argc) goto <D.2205>; else goto <D.2207>;
+  <D.2207>:;
+  helper_function ();
+  return 0;
+}
+

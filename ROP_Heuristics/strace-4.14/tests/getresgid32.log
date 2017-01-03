@@ -1,0 +1,2 @@
+undefined: __NR_getresgid32
+getresgid32.test: skipped test: ./getresgid32 exited with code 77

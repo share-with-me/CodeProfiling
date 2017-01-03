@@ -1,0 +1,3 @@
+brk(NULL) = 0x1de4000
+brk(NULL) = 0x1de4000
++++ exited with 0 +++

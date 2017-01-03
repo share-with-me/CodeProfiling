@@ -1,0 +1,7 @@
+sched_getattr(-559023410, NULL, 0, 0)   = -1 EINVAL (Invalid argument)
+sched_getattr(-1, 0x7f91a8ea9fd0, 3135220973, 3235839725) = -1 EINVAL (Invalid argument)
+sched_getattr(0, 0x7f91a8eaa000, 48, 0) = -1 EFAULT (Bad address)
+sched_getattr(0, {size=48, sched_policy=SCHED_OTHER, sched_flags=0, sched_nice=0, sched_priority=0, sched_runtime=0, sched_deadline=0, sched_period=0}, 48, 0) = 0
+sched_setattr(0, {size=48, sched_policy=SCHED_OTHER, sched_flags=SCHED_FLAG_RESET_ON_FORK, sched_nice=0, sched_priority=0, sched_runtime=0, sched_deadline=0, sched_period=0}, 0) = 0
+sched_setattr(-87113506, {size=2424336480, sched_policy=0xca7faced /* SCHED_??? */, sched_flags=0xbadc0ded1057da7a /* SCHED_FLAG_??? */, sched_nice=-1346383905, sched_priority=3100170472, sched_runtime=13464830495123435863, sched_deadline=13897669356158823541, sched_period=16055836792785972391}, 3203395597) = -1 EINVAL (Invalid argument)
++++ exited with 0 +++

@@ -1,0 +1,2 @@
+undefined: __NR_statfs64
+statfs64.test: skipped test: ./statfs64 exited with code 77

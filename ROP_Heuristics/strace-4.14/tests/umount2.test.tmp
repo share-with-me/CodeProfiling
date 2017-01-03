@@ -1,0 +1,2 @@
+umount2("umount2.sample", MNT_FORCE|MNT_DETACH|MNT_EXPIRE|UMOUNT_NOFOLLOW|0x10) = -1 EINVAL (Invalid argument)
++++ exited with 0 +++

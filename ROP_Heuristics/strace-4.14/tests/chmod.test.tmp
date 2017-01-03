@@ -1,0 +1,4 @@
+chmod("chmod_test_file", 0600) = 0
+chmod("chmod_test_file", 051) = -1 ENOENT (No such file or directory)
+chmod("chmod_test_file", 004) = -1 ENOENT (No such file or directory)
++++ exited with 0 +++

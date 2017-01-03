@@ -1,0 +1,32 @@
+
+;; Function main (main, funcdef_no=0, decl_uid=2197, symbol_order=0)
+
+main ()
+{
+  int x;
+  int D.2204;
+  int _2;
+
+  <bb 2>:
+  x_1 = 10;
+  if (x_1 == 10)
+    goto <bb 3>;
+  else
+    goto <bb 4>;
+
+  <bb 3>:
+  __builtin_puts (&"Allowed!"[0]);
+  goto <bb 5>;
+
+  <bb 4>:
+  __builtin_puts (&"Who are you?"[0]);
+
+  <bb 5>:
+  _2 = 0;
+
+<L3>:
+  return _2;
+
+}
+
+

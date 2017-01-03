@@ -1,0 +1,4 @@
+This code belongs to VU Amsterdam which has been used by us for evaluative purposes. 
+
+Use 
+python scan_protectable_locations.py  <executable>

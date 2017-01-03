@@ -1,0 +1,2 @@
+sethostname(NULL, 63) = -1 EFAULT (Bad address)
++++ exited with 0 +++

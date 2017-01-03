@@ -1,0 +1,13 @@
+creat("creat", 000) = -1 ETXTBSY (Text file busy)
+creat("creat", 0177777) = -1 ETXTBSY (Text file busy)
+creat("creat", 006) = -1 ETXTBSY (Text file busy)
+creat("creat", 060) = -1 ETXTBSY (Text file busy)
+creat("creat", 0600) = -1 ETXTBSY (Text file busy)
+creat("creat", 024) = -1 ETXTBSY (Text file busy)
+creat("creat", 0100000) = -1 ETXTBSY (Text file busy)
+creat("creat", 040006) = -1 ETXTBSY (Text file busy)
+creat("creat", 0120060) = -1 ETXTBSY (Text file busy)
+creat("creat", 010600) = -1 ETXTBSY (Text file busy)
+creat("creat", 020024) = -1 ETXTBSY (Text file busy)
+creat("creat", 067777) = -1 ETXTBSY (Text file busy)
++++ exited with 0 +++

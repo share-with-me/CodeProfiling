@@ -1,0 +1,8 @@
+getsockopt(-1, SOL_RAW, ICMP_FILTER, NULL, NULL) = -1 EBADF (Bad file descriptor)
+setsockopt(-1, SOL_RAW, ICMP_FILTER, NULL, 0) = -1 EBADF (Bad file descriptor)
+getsockopt(-1, SOL_RAW, ICMP_FILTER, 0x7f2f53807ffc, 0x7f2f5380dffc) = -1 EBADF (Bad file descriptor)
+setsockopt(-1, SOL_RAW, ICMP_FILTER, 0x7f2f5380e000, 4) = -1 EBADF (Bad file descriptor)
+setsockopt(-1, SOL_RAW, ICMP_FILTER, 0x7f2f53807ffc, -2) = -1 EINVAL (Invalid argument)
+setsockopt(-1, SOL_RAW, ICMP_FILTER, ~(1<<ICMP_ECHOREPLY|1<<ICMP_DEST_UNREACH|1<<ICMP_SOURCE_QUENCH|1<<ICMP_REDIRECT|1<<ICMP_TIME_EXCEEDED|1<<ICMP_PARAMETERPROB), 4) = -1 EBADF (Bad file descriptor)
+setsockopt(-1, SOL_RAW, ICMP_FILTER, ~(1<<ICMP_ECHOREPLY|1<<ICMP_DEST_UNREACH|1<<ICMP_SOURCE_QUENCH|1<<ICMP_REDIRECT|1<<ICMP_TIME_EXCEEDED|1<<ICMP_PARAMETERPROB), 8) = -1 EBADF (Bad file descriptor)
++++ exited with 0 +++

@@ -1,0 +1,2 @@
+undefined: __NR_membarrier
+membarrier.test: skipped test: ./membarrier exited with code 77

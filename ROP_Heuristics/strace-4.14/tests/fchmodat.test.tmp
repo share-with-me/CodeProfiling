@@ -1,0 +1,4 @@
+fchmodat(AT_FDCWD, "fchmodat_sample", 0600) = 0
+fchmodat(AT_FDCWD, "fchmodat_sample", 051) = -1 ENOENT (No such file or directory)
+fchmodat(AT_FDCWD, "fchmodat_sample", 004) = -1 ENOENT (No such file or directory)
++++ exited with 0 +++

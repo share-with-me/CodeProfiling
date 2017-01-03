@@ -1,0 +1,2 @@
+undefined: __NR_lstat64
+lstat64.test: skipped test: ./lstat64 exited with code 77

@@ -1,0 +1,2 @@
+undefined: __NR_fadvise64_64
+fadvise64_64.test: skipped test: ./fadvise64_64 exited with code 77

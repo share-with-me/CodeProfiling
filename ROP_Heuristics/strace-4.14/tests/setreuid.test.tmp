@@ -1,0 +1,8 @@
+setreuid(0, 0) = 0
+setreuid(0, 0) = 0
+setreuid(0, 0) = 0
+setreuid(-1, 0) = 0
+setreuid(0, -1) = 0
+setreuid(-1, 0) = 0
+setreuid(0, -1) = 0
++++ exited with 0 +++

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<title>Firebug</title>
+<script src = "scripts/require.min.js"></script>
+<script language="javascript" type="text/javascript">
+function measuretheTime(){
+
+console.profile('Time for first function');
+ 
+/*jslint node:true, vars:true, bitwise:true, unparam:true */
+/*jshint unused:true */
+// Leave the above lines for propper jshinting
+//Type Node.js Here :)
+
+
+
+
+var port = 5001;
+var motion_port = 9001;
+var node_list_port =12001;
+
+var gateway = '172.16.3.183';
+var dgram;
+define(function (require) {
+    dgram = require('dgram');
+});
+
+//var dgram = require('dgram');
+var udp_server = dgram.createSocket('udp4');
+var udp_listener = dgram.createSocket('udp4');
+var motion_socket = dgram.createSocket('udp4');
+var chat_server = dgram.createSocket('udp4');
+
+var mraa = require('mraa');
+var light_pin = new mraa.Aio(0);
+var temp_pin = new mraa.Aio(1);
+var motion_pin = new mraa.Aio(2);
+
+var light_val;
+var temp_val;
+var motion_val;
+
+var t=0;
+var i=0;
+var m_arr = [];
+var myOnboardLed = new mraa.Gpio(13);
+myOnboardLed.dir(mraa.DIR_OUT);
+var ledState = true;
+var above_threshold = 0;
+var below_threshold;
+var motion_message = "Empty";
+
+
+
+
+var si_1 = setInterval(function(){
+    light_val = light_pin.read();
+    temp_val = temp_pin.read();
+ 
+    var msg = light_val + "o" + temp_val + "o" + "IOT LAB";
+    console.log(msg);
+    var buff = new Buffer(msg.length);
+    buff.write(msg);
+    udp_server.send(buff,0,buff.length,port,gateway,function(err){
+    if(err){
+    console.log(err);
+        }
+        console.log("Sent " + buff.length + " light, temp and smoke bytes to gateway: "+gateway);
+    });
+},1000);
+
+
+var si_2 = setInterval(function(){
+    motion_val = motion_pin.read();
+    console.log('Motion value is: '+motion_val);
+    m_arr.push(motion_val);
+    if(m_arr.length == 10)
+    {
+     
+        console.log(m_arr);
+        for(i=0;i<m_arr.length;i++)
+    {
+        if(m_arr[i] > 650)
+        {
+            above_threshold = above_threshold+1;
+        }
+    }
+       
+    
+    if(above_threshold >= 5)
+    {
+        motion_message = "There is motion@IOT LAB";
+    
+    }
+        else 
+        
+        {
+            motion_message = "There is no motion@IOT LAB";
+        }
+         m_arr = [];
+        above_threshold = 0;
+    console.log("Sent " +motion_message+ " to gateway");
+     var motion_buff = new Buffer(motion_message.length);
+    motion_buff.write(motion_message);
+    motion_socket.send(motion_buff,0,motion_buff.length,motion_port,gateway,function(err){
+    if(err){
+    console.log(err);
+        }
+        
+    
+});
+       
+    }
+    
+},300);
+    
+
+
+
+
+function periodicActivity()
+{
+    if(t>16) return;
+    t+=1;
+  myOnboardLed.write(ledState?1:0); //if ledState is true then write a '1' (high) otherwise write a '0' (low)
+  ledState = !ledState; //invert the ledState
+  setTimeout(periodicActivity,300); //call the indicated function after 1 second (1000 milliseconds)
+}
+
+
+
+
+
+
+function send_my_ip(){
+    var buff = new Buffer("Hello I am just sending my IP");
+udp_server.send(buff,0,buff.length,node_list_port,gateway,function(err){
+if(err){
+console.log("error sending ip msg.");
+}
+});
+}
+
+
+udp_listener.on('message',function(message,remote){
+    t=0;
+    console.log(message.toString());
+    if((message.toString()) == "temperatureBlink" || (message.toString()) == "lightBlink" || (message.toString()) == "bothBlink"){
+    
+    periodicActivity();}
+});
+udp_listener.on('listening',function(){
+    var addr = udp_listener.address();
+    console.log('Client listening on: '+addr.address+' and port number: '+addr.port);
+});
+chat_server.on('message',function(msg,remote){
+    console.log('MESSAGE RECEIVED IS: '+msg.toString()+"from: "+remote.address);
+    if(msg.toString() == "i am gateway")
+        gateway = remote.address.toString();
+    else if(msg.toString() == "i am second gateway"){
+        gateway = remote.address.toString();
+    }
+});
+chat_server.on('listening',function(){
+    console.log('Listening on the chat server');
+});
+chat_server.bind(40001);                        
+udp_listener.bind(8001);
+
+console.profileEnd();
+
+console.time('Time for second function');
+for(var j=0;j < 100;j++){
+	console.log("World");
+}
+
+ 
+console.timeEnd('Time for second function');
+}
+</script>
+</head>
+<body>
+<input type="button" value="Trace" onclick="measuretheTime();"/>
+</body>
+</html>

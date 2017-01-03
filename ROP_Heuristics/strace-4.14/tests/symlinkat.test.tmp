@@ -1,0 +1,2 @@
+symlinkat("symlink_old", -1, "symlink_new") = -1 EBADF (Bad file descriptor)
++++ exited with 0 +++

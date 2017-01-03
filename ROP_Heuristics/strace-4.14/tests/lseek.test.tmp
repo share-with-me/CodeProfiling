@@ -1,0 +1,2 @@
+lseek(-1, -374081421428539665, SEEK_SET) = -1 EBADF (Bad file descriptor)
++++ exited with 0 +++

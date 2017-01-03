@@ -1,0 +1,5 @@
+open("open.sample", O_RDONLY|O_CREAT, 0400) = 3
+open("open.sample", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("open.sample", O_WRONLY|O_NONBLOCK|0x80000000) = -1 ENOENT (No such file or directory)
+open("open.sample", O_WRONLY|O_DIRECTORY|O_TMPFILE, 0600) = -1 ENOENT (No such file or directory)
++++ exited with 0 +++

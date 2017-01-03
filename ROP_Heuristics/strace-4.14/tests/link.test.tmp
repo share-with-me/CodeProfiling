@@ -1,0 +1,2 @@
+link("link_sample_old", "link_sample_new") = -1 ENOENT (No such file or directory)
++++ exited with 0 +++

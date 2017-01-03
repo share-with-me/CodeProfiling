@@ -1,0 +1,18 @@
+fchown(3, 0, 0) = 0
+fchown(3, 0, 0) = 0
+fchown(3, 0, 0) = 0
+fchown(3, -1, 0) = 0
+fchown(3, 0, -1) = 0
+fchown(3, -1, 0) = 0
+fchown(3, 0, -1) = 0
+fchown(3, 4294901760, 0) = -1 EBADF (Bad file descriptor)
+fchown(3, 0, 4294901760) = -1 EBADF (Bad file descriptor)
+fchown(3, 65535, 0) = -1 EBADF (Bad file descriptor)
+fchown(3, 0, 65535) = -1 EBADF (Bad file descriptor)
+fchown(3, 3235839999, 0) = -1 EBADF (Bad file descriptor)
+fchown(3, 0, 3235839999) = -1 EBADF (Bad file descriptor)
+fchown(3, 4207869677, 0) = -1 EBADF (Bad file descriptor)
+fchown(3, 0, 4207869677) = -1 EBADF (Bad file descriptor)
+fchown(3, 3735928559, 0) = -1 EBADF (Bad file descriptor)
+fchown(3, 0, 3735928559) = -1 EBADF (Bad file descriptor)
++++ exited with 0 +++

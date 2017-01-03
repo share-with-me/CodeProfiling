@@ -1,0 +1,2 @@
+undefined: __NR_lchown32
+lchown32.test: skipped test: ./lchown32 exited with code 77

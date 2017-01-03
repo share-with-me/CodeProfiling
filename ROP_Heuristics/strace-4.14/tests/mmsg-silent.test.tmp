@@ -1,0 +1,3 @@
+sendmmsg(4, 0x7ffcb21eb8a0, 1, MSG_DONTWAIT) = 1
+recvmmsg(3, 0x7ffcb21eb8a0, 1, MSG_DONTWAIT, 0x7ffcb21eb890) = 1
++++ exited with 0 +++

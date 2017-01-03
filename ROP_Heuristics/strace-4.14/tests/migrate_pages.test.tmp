@@ -1,0 +1,2 @@
+migrate_pages(-1, 0, NULL, NULL) = -1 ESRCH (No such process)
++++ exited with 0 +++

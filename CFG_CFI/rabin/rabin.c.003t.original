@@ -1,0 +1,90 @@
+
+;; Function search (null)
+;; enabled by -tree-original
+
+
+{
+  int M = (int) strlen ((const char *) pat);
+  int N = (int) strlen ((const char *) txt);
+  int i;
+  int j;
+  int p = 0;
+  int t = 0;
+  int h = 1;
+
+    int M = (int) strlen ((const char *) pat);
+    int N = (int) strlen ((const char *) txt);
+    int i;
+    int j;
+    int p = 0;
+    int t = 0;
+    int h = 1;
+  i = 0;
+  goto <D.2377>;
+  <D.2376>:;
+  h = (h * 256) % q;
+  i++ ;
+  <D.2377>:;
+  if (M + -1 > i) goto <D.2376>; else goto <D.2378>;
+  <D.2378>:;
+  i = 0;
+  goto <D.2380>;
+  <D.2379>:;
+  p = (p * 256 + (int) *(pat + (sizetype) i)) % q;
+  t = (t * 256 + (int) *(txt + (sizetype) i)) % q;
+  i++ ;
+  <D.2380>:;
+  if (i < M) goto <D.2379>; else goto <D.2381>;
+  <D.2381>:;
+  i = 0;
+  goto <D.2386>;
+  <D.2385>:;
+  if (p == t)
+    {
+      j = 0;
+      goto <D.2384>;
+      <D.2383>:;
+      if ((signed char) *(txt + (sizetype) (i + j)) != (signed char) *(pat + (sizetype) j))
+        {
+          goto <D.2382>;
+        }
+      j++ ;
+      <D.2384>:;
+      if (j < M) goto <D.2383>; else goto <D.2382>;
+      <D.2382>:;
+      if (j == M)
+        {
+          printf ((const char * restrict) "Pattern found at index %d \n", i);
+        }
+    }
+  if (N - M > i)
+    {
+      t = ((t - (int) *(txt + (sizetype) i) * h) * 256 + (int) *(txt + (sizetype) (i + M))) % q;
+      if (t < 0)
+        {
+          t = t + q;
+        }
+    }
+  i++ ;
+  <D.2386>:;
+  if (N - M >= i) goto <D.2385>; else goto <D.2387>;
+  <D.2387>:;
+}
+
+
+;; Function main (null)
+;; enabled by -tree-original
+
+
+{
+  char txt[16] = "GEEKS FOR GEEKS";
+  char pat[5] = "GEEK";
+  int q = 101;
+
+    char txt[16] = "GEEKS FOR GEEKS";
+    char pat[5] = "GEEK";
+    int q = 101;
+  search ((char *) &pat, (char *) &txt, q);
+  return 0;
+}
+

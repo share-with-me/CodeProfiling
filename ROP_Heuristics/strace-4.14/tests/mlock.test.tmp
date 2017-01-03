@@ -1,0 +1,3 @@
+mlock(0x7f0abf114c00, 1024) = 0
+munlock(0x7f0abf114c00, 1024) = 0
++++ exited with 0 +++

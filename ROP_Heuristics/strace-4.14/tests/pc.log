@@ -1,0 +1,21 @@
+00400000-00402000 r-xp 00000000 08:01 1357694                            /root/Downloads/strace-4.14/tests/pc
+00601000-00602000 rw-p 00001000 08:01 1357694                            /root/Downloads/strace-4.14/tests/pc
+7fe86c0cd000-7fe86c26f000 r-xp 00000000 08:01 8915185                    /lib/x86_64-linux-gnu/libc-2.19.so
+7fe86c26f000-7fe86c46e000 ---p 001a2000 08:01 8915185                    /lib/x86_64-linux-gnu/libc-2.19.so
+7fe86c46e000-7fe86c472000 r--p 001a1000 08:01 8915185                    /lib/x86_64-linux-gnu/libc-2.19.so
+7fe86c472000-7fe86c474000 rw-p 001a5000 08:01 8915185                    /lib/x86_64-linux-gnu/libc-2.19.so
+7fe86c474000-7fe86c478000 rw-p 00000000 00:00 0 
+7fe86c478000-7fe86c47b000 r-xp 00000000 08:01 8915188                    /lib/x86_64-linux-gnu/libdl-2.19.so
+7fe86c47b000-7fe86c67a000 ---p 00003000 08:01 8915188                    /lib/x86_64-linux-gnu/libdl-2.19.so
+7fe86c67a000-7fe86c67b000 r--p 00002000 08:01 8915188                    /lib/x86_64-linux-gnu/libdl-2.19.so
+7fe86c67b000-7fe86c67c000 rw-p 00003000 08:01 8915188                    /lib/x86_64-linux-gnu/libdl-2.19.so
+7fe86c67c000-7fe86c69c000 r-xp 00000000 08:01 8915182                    /lib/x86_64-linux-gnu/ld-2.19.so
+7fe86c876000-7fe86c879000 rw-p 00000000 00:00 0 
+7fe86c89a000-7fe86c89c000 rw-p 00000000 00:00 0 
+7fe86c89c000-7fe86c89d000 r--p 00020000 08:01 8915182                    /lib/x86_64-linux-gnu/ld-2.19.so
+7fe86c89d000-7fe86c89e000 rw-p 00021000 08:01 8915182                    /lib/x86_64-linux-gnu/ld-2.19.so
+7fe86c89e000-7fe86c89f000 rw-p 00000000 00:00 0 
+7ffd4f020000-7ffd4f043000 rw-p 00000000 00:00 0                          [stack]
+7ffd4f149000-7ffd4f14b000 r--p 00000000 00:00 0                          [vvar]
+7ffd4f14b000-7ffd4f14d000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]

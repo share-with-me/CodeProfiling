@@ -1,0 +1,2 @@
+undefined: __NR_fcntl64
+fcntl64.test: skipped test: ./fcntl64 exited with code 77

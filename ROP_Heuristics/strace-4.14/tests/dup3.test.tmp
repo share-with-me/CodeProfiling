@@ -1,0 +1,2 @@
+dup3(-1, -2, O_CLOEXEC) = -1 EBADF (Bad file descriptor)
++++ exited with 0 +++

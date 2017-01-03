@@ -1,0 +1,8 @@
+setregid(0, 0) = 0
+setregid(0, 0) = 0
+setregid(0, 0) = 0
+setregid(-1, 0) = 0
+setregid(0, -1) = 0
+setregid(-1, 0) = 0
+setregid(0, -1) = 0
++++ exited with 0 +++

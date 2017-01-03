@@ -1,0 +1,2 @@
+times({tms_utime=24, tms_stime=15, tms_cutime=33, tms_cstime=26}) = 1723292711
++++ exited with 0 +++

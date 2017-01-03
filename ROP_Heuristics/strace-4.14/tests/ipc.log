@@ -1,0 +1,2 @@
+undefined: __NR_ipc && HAVE_LINUX_IPC_H
+ipc.test: skipped test: ./ipc exited with code 77

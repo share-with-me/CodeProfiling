@@ -1,0 +1,2 @@
+undefined: __NR_oldumount
+umount.test: skipped test: ./umount exited with code 77

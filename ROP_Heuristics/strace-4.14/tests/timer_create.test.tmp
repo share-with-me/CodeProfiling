@@ -1,0 +1,7 @@
+timer_create(CLOCK_REALTIME, NULL, NULL) = -1 EFAULT (Bad address)
+timer_create(CLOCK_REALTIME, {sigev_value={int=-1159983635, ptr=0xdeadbeefbadc0ded}, sigev_signo=4207869677, sigev_notify=0xdefaced /* SIGEV_??? */}, NULL) = -1 EINVAL (Invalid argument)
+timer_create(CLOCK_REALTIME, {sigev_value={int=-1159983635, ptr=0xdeadbeefbadc0ded}, sigev_signo=4207869677, sigev_notify=SIGEV_NONE}, [2]) = 0
+timer_create(CLOCK_MONOTONIC, {sigev_value={int=-1159983635, ptr=0xdeadbeefbadc0ded}, sigev_signo=SIGALRM, sigev_notify=SIGEV_SIGNAL}, [3]) = 0
+timer_create(CLOCK_REALTIME, {sigev_value={int=-1159983635, ptr=0xdeadbeefbadc0ded}, sigev_signo=SIGALRM, sigev_notify=SIGEV_THREAD, sigev_notify_function=0xdeadbeefbadc0ded, sigev_notify_attributes=0xcafef00dfacefeed}, [4]) = 0
+timer_create(CLOCK_MONOTONIC, {sigev_value={int=-1159983635, ptr=0xdeadbeefbadc0ded}, sigev_signo=SIGALRM, sigev_notify=SIGEV_THREAD_ID, sigev_notify_thread_id=27216}, [5]) = 0
++++ exited with 0 +++

@@ -1,0 +1,9 @@
+recvfrom(5, "A", 1, 0, {sa_family=AF_UNIX, sun_path="recvfrom.socket.send"}, [110->23]) = 1
+recvfrom(5, "A", 1, 0, {sa_family=AF_UNIX, sun_path="recvfrom.socket.send"}, [23]) = 1
+recvfrom(5, NULL, 1, 0, 0x7f6d768b7f92, NULL) = -1 EFAULT (Bad address)
+recvfrom(5, "A", 1, 0, NULL, NULL) = 1
+recvfrom(5, NULL, 1, 0, 0x7f6d768b7f92, 0x7f6d768be000) = -1 EFAULT (Bad address)
+recvfrom(5, "A", 1, 0, {sa_family=AF_UNIX}, [2->23]) = 1
+recvfrom(5, "A", 1, 0, {sa_family=AF_UNIX, sun_path="recvfrom.socke"}, [16->23]) = 1
+recvfrom(5, NULL, 1, 0, 0x7f6d768b7ff0, [23]) = -1 EFAULT (Bad address)
++++ exited with 0 +++

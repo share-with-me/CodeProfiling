@@ -1,0 +1,3 @@
+epoll_create1(EPOLL_CLOEXEC) = 3
+epoll_create1(EPOLL_CLOEXEC|0x800) = -1 EINVAL (Invalid argument)
++++ exited with 0 +++

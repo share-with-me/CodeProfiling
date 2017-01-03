@@ -1,0 +1,7 @@
+close(3</etc/ld.so.cache>) = 0
+close(3</lib/x86_64-linux-gnu/libc-2.19.so>) = 0
+socket(AF_NETLINK, SOCK_RAW, NETLINK_SOCK_DIAG) = 3<NETLINK:[125296]>
+bind(3<NETLINK:[125296]>, {sa_family=AF_NETLINK, nl_pid=1234, nl_groups=00000000}, 12) = 0
+getsockname(3<NETLINK:[SOCK_DIAG:1234]>, {sa_family=AF_NETLINK, nl_pid=1234, nl_groups=00000000}, [12]) = 0
+close(3<NETLINK:[SOCK_DIAG:1234]>) = 0
++++ exited with 0 +++

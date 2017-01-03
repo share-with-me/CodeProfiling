@@ -1,0 +1,3 @@
+mlockall(0) = -1 EINVAL (Invalid argument)
+mlockall(MCL_CURRENT) = 0
++++ exited with 0 +++

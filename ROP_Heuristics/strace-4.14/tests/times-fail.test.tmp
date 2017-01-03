@@ -1,0 +1,2 @@
+times(0x42) = -1 EFAULT (Bad address)
++++ exited with 0 +++

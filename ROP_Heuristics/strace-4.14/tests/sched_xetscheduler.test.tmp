@@ -1,0 +1,8 @@
+sched_getscheduler(0) = 0 (SCHED_OTHER)
+sched_getscheduler(-1) = -1 EINVAL (Invalid argument)
+sched_setscheduler(0, SCHED_FIFO, NULL) = -1 EINVAL (Invalid argument)
+sched_setscheduler(0, SCHED_FIFO, 0x7fefb529e000) = -1 EFAULT (Bad address)
+sched_setscheduler(0, 0xfaceda7a /* SCHED_??? */, [-1]) = -1 EINVAL (Invalid argument)
+sched_setscheduler(-1, SCHED_FIFO, [-1]) = -1 EINVAL (Invalid argument)
+sched_setscheduler(0, SCHED_FIFO, [-1]) = -1 EINVAL (Invalid argument)
++++ exited with 0 +++

@@ -1,0 +1,4 @@
+getdents64(-1, NULL, 3735928559) = -1 EBADF (Bad file descriptor)
+getdents64(0, [{d_ino=1603024, d_off=2386456996676299423, d_reclen=280, d_type=DT_REG, d_name="A\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nA\nZ"}, {d_ino=1646747, d_off=6124339710956856803, d_reclen=24, d_type=DT_DIR, d_name="."}, {d_ino=1425564, d_off=9223372036854775807, d_reclen=24, d_type=DT_DIR, d_name=".."}], 8192) = 328
+getdents64(0, [], 8192) = 0
++++ exited with 0 +++

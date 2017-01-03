@@ -1,0 +1,2 @@
+undefined: __NR_getxpid && __NR_getxuid && __NR_getxgid
+getxxid.test: skipped test: ./getxxid exited with code 77

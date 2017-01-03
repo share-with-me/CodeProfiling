@@ -1,0 +1,3 @@
+setitimer(ITIMER_REAL, {it_interval={789985, 789986}, it_value={789987, 789988}}, {it_interval={0, 0}, it_value={0, 0}}) = 0
+getitimer(ITIMER_REAL, {it_interval={789985, 789986}, it_value={789987, 789928}}) = 0
++++ exited with 0 +++

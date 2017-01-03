@@ -1,0 +1,5 @@
+sched_rr_get_interval(0, NULL) = -1 EFAULT (Bad address)
+sched_rr_get_interval(0, 0x7f28c0584000) = -1 EFAULT (Bad address)
+sched_rr_get_interval(-1, 0x7f28c0583ff0) = -1 EINVAL (Invalid argument)
+sched_rr_get_interval(0, {0, 16000000}) = 0
++++ exited with 0 +++

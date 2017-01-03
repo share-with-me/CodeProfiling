@@ -1,0 +1,10 @@
+shmget(0xfdb97531, 16051074064915160786, IPC_CREAT|IPC_EXCL|SHM_HUGETLB|0xface1000|0125) = -1 EINVAL (Invalid argument)
+shmget(IPC_PRIVATE, 1, 0600)            = 20676653
+shmctl(-553988399, 0xdefaced2 /* SHM_??? */, NULL) = -1 EINVAL (Invalid argument)
+shmctl(-553988399, IPC_STAT, 0xffffffffffffffff) = -1 EINVAL (Invalid argument)
+shmctl(20676653, IPC_STAT, {shm_perm={uid=0, gid=0, mode=0600, key=0, cuid=0, cgid=0}, shm_segsz=1, shm_cpid=24363, shm_lpid=0, shm_nattch=0, shm_atime=0, shm_dtime=0, shm_ctime=1480266463}) = 0
+shmctl(20676653, IPC_SET, {shm_perm={uid=0, gid=0, mode=0600}, ...}) = 0
+shmctl(0, SHM_INFO, 0x7ffd3634a5d0)     = 45
+shmctl(20676653, SHM_STAT, 0x7ffd3634a5d0) = 20676653
+shmctl(20676653, IPC_RMID, NULL)        = 0
++++ exited with 0 +++

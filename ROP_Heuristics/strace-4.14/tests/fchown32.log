@@ -1,0 +1,2 @@
+undefined: __NR_fchown32
+fchown32.test: skipped test: ./fchown32 exited with code 77

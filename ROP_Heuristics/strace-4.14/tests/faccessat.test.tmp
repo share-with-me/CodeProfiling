@@ -1,0 +1,2 @@
+faccessat(-1, "faccessat.sample", F_OK) = -1 EBADF (Bad file descriptor)
++++ exited with 0 +++

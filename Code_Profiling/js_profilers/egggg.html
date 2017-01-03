@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<title>Firebug</title>
+<script language="javascript" type="text/javascript">
+function measuretheTime(){
+
+console.profile('Time for first function');
+ 
+var inp = [805,560,594,578,549,805,302,567,546,600];
+console.log(filter(inp));
+function filter(input){
+	var win_size = input.length;
+	var r = 0;
+	var threshold = 200;
+	var class_array = [[],[],[],[],[],[],[]];
+	var current_array = [];
+	//inp.sort(function(a, b){return a-b});
+	current_array[0] = input[r];
+	input.splice(0,1);
+	var s = 0;
+	var c_r = 0;
+	//console.log(input)
+		for(;s < current_array.length && input.length > 0;){
+			var temp = Math.abs(current_array[s] - input[r]);
+			if(temp < threshold){
+				class_array[s].push(current_array[s]);
+				current_array[s] = input[r];
+				input.splice(r,1);
+				s = 0;
+			}else{
+				s++;
+				if(s == current_array.length){
+					current_array[s] = input[r];
+					input.splice(r,1);
+					s = 0;
+				}
+			}
+			console.log(current_array);
+		}
+	s = 0;
+	for(;s < current_array.length;s++){
+		class_array[s].push(current_array[s]);
+	}
+	return class_array;
+}
+
+function averaging(arr){
+	var r = 0;
+	var temp = 0;
+	for(;r < arr.length;r++){
+		temp+=arr[r];
+	}
+	return temp/arr.length ;
+}
+
+console.profileEnd();
+
+console.time('Time for second function');
+for(var j=0;j < 100;j++){
+	console.log("World");
+}
+
+ 
+console.timeEnd('Time for second function');
+}
+</script>
+</head>
+<body>
+<input type="button" value="Trace" onclick="measuretheTime();"/>
+</body>
+</html>

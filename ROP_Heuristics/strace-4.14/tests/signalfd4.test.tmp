@@ -1,0 +1,2 @@
+signalfd4(-1, [USR2 CHLD], 8, SFD_CLOEXEC|SFD_NONBLOCK) = 3
++++ exited with 0 +++

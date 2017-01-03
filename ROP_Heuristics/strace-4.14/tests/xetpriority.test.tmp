@@ -1,0 +1,3 @@
+getpriority(PRIO_PROCESS, 27854) = 20
+setpriority(PRIO_PROCESS, 27854, 0) = 0
++++ exited with 0 +++

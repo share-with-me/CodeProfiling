@@ -1,0 +1,2 @@
+undefined: __NR_userfaultfd && HAVE_LINUX_USERFAULTFD_H
+ioctl_uffdio.test: skipped test: ./ioctl_uffdio exited with code 77

@@ -1,0 +1,3 @@
+../strace: Process 28107 attached
+restart_syscall(<... resuming interrupted nanosleep ...>../strace: Process 28107 detached
+ <detached ...>

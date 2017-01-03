@@ -1,0 +1,7 @@
+../strace: umovestr: short read (5 < 11) @0x7f9d2f458ffb: Bad address
+../strace: umoven: short read (5 < 10) @0x7f9d2f458ffb
+../strace: umovestr: short read (5 < 11) @0x7f9d2f458ffb: Bad address
+../strace: umovestr: short read (5 < 11) @0x7f9d2f452ffb: Bad address
+../strace: umoven: short read (5 < 10) @0x7f9d2f458ffb
+../strace: umoven: short read (5 < 10) @0x7f9d2f458ffb
+../strace: umoven: short read (11 < 12) @0x7f9d2f42eff5

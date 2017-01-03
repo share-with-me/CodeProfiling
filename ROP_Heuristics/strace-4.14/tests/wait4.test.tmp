@@ -1,0 +1,9 @@
+wait4(27677, 0x7f7ac1bd2ffc, WNOHANG|__WALL, NULL) = 0
+wait4(27677, 0x7f7ac1bd2ffc, WNOHANG|__WALL, 0x7f7ac1bccf70) = 0
+wait4(27677, [{WIFEXITED(s) && WEXITSTATUS(s) == 42}], 0, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 27677
+wait4(27678, [{WIFSIGNALED(s) && WTERMSIG(s) == SIGUSR1}], __WALL, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 27678
+wait4(27679, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGSTOP}], WSTOPPED, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 27679
+wait4(27679, [{WIFCONTINUED(s)}], WCONTINUED, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 27679
+wait4(27679, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 27679
+wait4(-1, 0x7f7ac1bd2ffc, WNOHANG|WSTOPPED|__WALL, 0x7f7ac1bccf70) = -1 ECHILD (No child processes)
++++ exited with 0 +++

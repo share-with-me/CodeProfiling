@@ -1,0 +1,7 @@
+preadv(0, [{iov_base="\0\0\0\0\0\0\0\0", iov_len=8}], 1, 1004211379570065135) = 8
+preadv(0, 0x7fd466c22ff0, 1, -1) = -1 EINVAL (Invalid argument)
+preadv(0, NULL, 1, -2) = -1 EINVAL (Invalid argument)
+preadv(0, [], 0, -3) = -1 EINVAL (Invalid argument)
+preadv(3, [{iov_base="01234567", iov_len=8}], 1, 0) = 8
+preadv(3, [{iov_base="89abcde", iov_len=8}, {iov_base="", iov_len=15}], 2, 8) = 7
++++ exited with 0 +++

@@ -1,0 +1,2 @@
+undefined: __NR_preadv2 && __NR_pwritev2
+preadv2-pwritev2.test: skipped test: ./preadv2-pwritev2 exited with code 77

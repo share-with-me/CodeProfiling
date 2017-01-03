@@ -1,0 +1,7 @@
+mount("mount_source", "mount_target", "mount_fstype", MS_RDONLY|MS_NOSUID|MS_NODEV|MS_NOEXEC, "mount_data") = -1 ENOENT (No such file or directory)
+mount("mount_source", "mount_target", "mount_fstype", MS_RDONLY|MS_NOSUID|MS_NODEV|MS_NOEXEC|MS_RELATIME, "mount_data") = -1 ENOENT (No such file or directory)
+mount("mount_source", "mount_target", "mount_fstype", MS_MGC_VAL, "mount_data") = -1 ENOENT (No such file or directory)
+mount("mount_source", "mount_target", "mount_fstype", MS_MGC_VAL|MS_RDONLY|MS_NOSUID|MS_NODEV|MS_NOEXEC, "mount_data") = -1 ENOENT (No such file or directory)
+mount("mount_source", "mount_target", 0x4013cf, MS_REMOUNT, "mount_data") = -1 ENOENT (No such file or directory)
+mount("mount_source", "mount_target", 0x4013cf, MS_BIND, 0x4013c4) = -1 ENOENT (No such file or directory)
++++ exited with 0 +++

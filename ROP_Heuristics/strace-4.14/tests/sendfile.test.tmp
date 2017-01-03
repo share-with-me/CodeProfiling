@@ -1,0 +1,9 @@
+sendfile(0, 1, NULL, 4096) = -1 EBADF (Bad file descriptor)
+sendfile(0, 1, 0x7f8fcf889000, 4096) = -1 EFAULT (Bad address)
+sendfile(4, 5, NULL, 21606) = 21606
+sendfile(4, 5, 0x7f8fcf888ffc, 21606) = -1 EFAULT (Bad address)
+sendfile(4, 5, [0] => [21606], 21606) = 21606
+sendfile(4, 5, [21606] => [32408], 32409) = 10802
+sendfile(4, 5, [14627392582579060461], 1) = -1 EINVAL (Invalid argument)
+sendfile(4, 5, [233811181], 1) = 0
++++ exited with 0 +++

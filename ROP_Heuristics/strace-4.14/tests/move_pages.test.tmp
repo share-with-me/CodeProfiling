@@ -1,0 +1,16 @@
+move_pages(24903, 0, [], NULL, [], MPOL_MF_MOVE) = 0
+move_pages(24903, 0, [], [], [], MPOL_MF_MOVE_ALL) = 0
+move_pages(24903, 1, 0x7f0aa6972000, 0x7f0aa696c000, 0x7f0aa6966000, MPOL_MF_MOVE_ALL) = -1 EFAULT (Bad address)
+move_pages(24903, 1, [0x7f0aa6977000], NULL, [0], MPOL_MF_MOVE) = 0
+move_pages(24903, 1, [0x7f0aa6977000], [-559038751], 0x7f0aa6965ffc, MPOL_MF_MOVE_ALL) = -1 ENODEV (No such device)
+move_pages(24903, 2, [0x7f0aa6977000, 0x7f0aa6972000], [-559038751, 0x7f0aa696c000], 0x7f0aa6965ffc, MPOL_MF_MOVE_ALL) = -1 ENODEV (No such device)
+move_pages(24903, 2, [0x7f0aa6978000, 0x7f0aa6977000], NULL, [EFAULT, 0], MPOL_MF_MOVE) = 0
+move_pages(24903, 2, [0x7f0aa6978000, 0x7f0aa6977000], [-559038750, -559038751], 0x7f0aa6965ff8, MPOL_MF_MOVE_ALL) = -1 ENODEV (No such device)
+move_pages(24903, 3, [0x7f0aa6978000, 0x7f0aa6977000, 0x7f0aa6972000], [-559038750, -559038751, 0x7f0aa696c000], 0x7f0aa6965ff8, MPOL_MF_MOVE_ALL) = -1 ENODEV (No such device)
+move_pages(24903, 3, [0x7f0aa696bff8, 0x7f0aa6978000, 0x7f0aa6977000], NULL, [0, EFAULT, 0], MPOL_MF_MOVE) = 0
+move_pages(24903, 3, [0x7f0aa696bff8, 0x7f0aa6978000, 0x7f0aa6977000], [-559038749, -559038750, -559038751], 0x7f0aa6965ff4, MPOL_MF_MOVE_ALL) = -1 ENODEV (No such device)
+move_pages(24903, 4, [0x7f0aa696bff8, 0x7f0aa6978000, 0x7f0aa6977000, 0x7f0aa6972000], [-559038749, -559038750, -559038751, 0x7f0aa696c000], 0x7f0aa6965ff4, MPOL_MF_MOVE_ALL) = -1 ENODEV (No such device)
+move_pages(24903, 4, [0x7f0aa6965ff0, 0x7f0aa696bff8, 0x7f0aa6978000, ...], NULL, [0, 0, EFAULT, ...], MPOL_MF_MOVE) = 0
+move_pages(24903, 4, [0x7f0aa6965ff0, 0x7f0aa696bff8, 0x7f0aa6978000, ...], [-559038748, -559038749, -559038750, ...], 0x7f0aa6965ff0, MPOL_MF_MOVE_ALL) = -1 ENODEV (No such device)
+move_pages(24903, 5, [0x7f0aa6965ff0, 0x7f0aa696bff8, 0x7f0aa6978000, ...], [-559038748, -559038749, -559038750, ...], 0x7f0aa6965ff0, MPOL_MF_MOVE_ALL) = -1 ENODEV (No such device)
++++ exited with 0 +++

@@ -1,0 +1,6 @@
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=26859, si_uid=0, si_status=42, si_utime=0, si_stime=0} ---
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_KILLED, si_pid=26860, si_uid=0, si_status=SIGUSR1, si_utime=0, si_stime=0} ---
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_STOPPED, si_pid=26861, si_uid=0, si_status=SIGSTOP, si_utime=0, si_stime=0} ---
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_CONTINUED, si_pid=26861, si_uid=0, si_status=SIGCONT, si_utime=0, si_stime=0} ---
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=26861, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
++++ exited with 0 +++

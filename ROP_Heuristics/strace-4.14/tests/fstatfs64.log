@@ -1,0 +1,2 @@
+undefined: __NR_fstatfs64
+fstatfs64.test: skipped test: ./fstatfs64 exited with code 77

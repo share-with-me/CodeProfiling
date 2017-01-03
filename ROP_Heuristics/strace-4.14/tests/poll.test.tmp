@@ -1,0 +1,9 @@
+poll(NULL, 42, 0) = -1 EFAULT (Bad address)
+poll([], 0, 42) = 0 (Timeout)
+poll([{fd=0, events=POLLIN|POLLPRI|POLLRDNORM|POLLRDBAND}, {fd=1, events=POLLOUT|POLLWRNORM|POLLWRBAND}, {fd=4, events=POLLIN|POLLPRI}, {fd=5, events=POLLOUT}, {fd=2, events=POLLOUT|POLLWRBAND}], 5, 42) = 3 ([{fd=1, revents=POLLOUT|POLLWRNORM}, {fd=5, revents=POLLOUT}, {fd=2, revents=POLLOUT}])
+poll([{fd=-1}, {fd=1, events=POLLOUT|POLLWRNORM|POLLWRBAND}, {fd=-3}, {fd=5, events=POLLOUT}, {fd=2, events=0}], 5, 42) = 2 ([{fd=1, revents=POLLOUT|POLLWRNORM}, {fd=5, revents=POLLOUT}])
+poll([{fd=-1}, {fd=-2}, {fd=-3}, {fd=5, events=POLLOUT}, {fd=-5}], 5, 42) = 1 ([{fd=5, revents=POLLOUT}])
+poll([{fd=1, events=POLLIN|POLLPRI|POLLRDNORM|POLLRDBAND}, {fd=0, events=POLLOUT|POLLWRNORM|POLLWRBAND}], 2, 42) = 0 (Timeout)
+poll(0x7f2dde765000, 1, 0) = -1 EFAULT (Bad address)
+poll([{fd=-5}, 0x7f2dde765000], 2, 0) = -1 EFAULT (Bad address)
++++ exited with 0 +++

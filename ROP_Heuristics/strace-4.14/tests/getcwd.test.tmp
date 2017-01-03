@@ -1,0 +1,5 @@
+getcwd("/root/Downloads/strace-4.14/tests", 4097) = 34
+getcwd(0x7ffdbe46ca70, 0) = -1 ERANGE (Numerical result out of range)
+getcwd(NULL, 13464652301225294542) = -1 EFAULT (Bad address)
+getcwd(0xffffffffffffffff, 4097) = -1 EFAULT (Bad address)
++++ exited with 0 +++

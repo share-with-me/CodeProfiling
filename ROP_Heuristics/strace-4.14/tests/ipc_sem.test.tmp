@@ -1,0 +1,8 @@
+semget(0xfdb97531, -557785391, IPC_CREAT|IPC_EXCL|IPC_NOWAIT|0xface1000|0125) = -1 EINVAL (Invalid argument)
+semget(IPC_PRIVATE, 1, 0600)            = 2621440
+semctl(-38177487, -324508640, 0xdeadbeef /* SEM_??? */, 0xbadc0dedffffface) = -1 EINVAL (Invalid argument)
+semctl(2621440, 0, IPC_STAT, 0x7ffc29229cc0) = 0
+semctl(0, 0, SEM_INFO, 0x7ffc29229c90)  = 0
+semctl(2621440, 0, SEM_STAT, 0x7ffc29229cc0) = 2621440
+semctl(2621440, 0, IPC_RMID, 0)         = 0
++++ exited with 0 +++

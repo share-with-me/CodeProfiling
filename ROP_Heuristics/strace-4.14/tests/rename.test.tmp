@@ -1,0 +1,2 @@
+rename("rename_old", "rename_new") = -1 ENOENT (No such file or directory)
++++ exited with 0 +++

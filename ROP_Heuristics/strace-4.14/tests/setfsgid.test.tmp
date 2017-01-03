@@ -1,0 +1,19 @@
+setfsgid(0) = 0
+setfsgid(0) = 0
+setfsgid(4294901760) = 0
+setfsgid(0) = 4294901760
+setfsgid(0) = 0
+setfsgid(0) = 0
+setfsgid(65535) = 0
+setfsgid(0) = 65535
+setfsgid(4294967295) = 0
+setfsgid(0) = 0
+setfsgid(4294967295) = 0
+setfsgid(0) = 0
+setfsgid(3235839999) = 0
+setfsgid(0) = 3235839999
+setfsgid(4207869677) = 0
+setfsgid(0) = 4207869677
+setfsgid(3735928559) = 0
+setfsgid(0) = 3735928559
++++ exited with 0 +++

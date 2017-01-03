@@ -1,0 +1,2 @@
+nanosleep({1, 0}, NULL) = 0 <1.000081>
++++ exited with 0 +++

@@ -1,0 +1,2 @@
+undefined: __NR_setresgid32
+setresgid32.test: skipped test: ./setresgid32 exited with code 77

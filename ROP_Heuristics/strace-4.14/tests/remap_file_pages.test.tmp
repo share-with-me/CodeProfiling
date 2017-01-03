@@ -1,0 +1,2 @@
+remap_file_pages(0xfacefeeddeadbeef, 16067382020775538701, PROT_READ|PROT_WRITE|PROT_EXEC, 14624237743343197933, MAP_PRIVATE|MAP_ANONYMOUS) = -1 EINVAL (Invalid argument)
++++ exited with 0 +++

@@ -1,0 +1,5 @@
+27917 chdir("attach-p-cmd.test cmd") = -1 ENOENT (No such file or directory)
+27917 +++ exited with 0 +++
+27914 --- SIGALRM {si_signo=SIGALRM, si_code=SI_KERNEL} ---
+27914 chdir("attach-p-cmd.test -p") = -1 ENOENT (No such file or directory)
+27914 +++ exited with 0 +++

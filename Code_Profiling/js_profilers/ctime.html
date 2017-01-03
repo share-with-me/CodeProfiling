@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<title>Firebug</title>
+<script language="javascript" type="text/javascript">
+function measuretheTime(){
+
+console.profile('Time for first function');
+ 
+var inp = [800,850,700,600,500,200,100,70];
+inp.sort(function(a,b){return a-b});console.log(inp);
+//console.log(inp);
+var threshold = 200;
+var transition = 0;
+var marker = [];
+var marker_ind = 0;
+var i=0;
+for(;i<inp.length;i++){
+	var a = inp[i];
+	var b = inp[i+1];
+	transition = b-a;
+	if(transition > 200){
+		
+		marker[marker_ind] = i+1;
+		marker_ind++;
+	}
+}
+marker[marker.length] = inp.length;
+console.log(marker);
+i=0;
+var t = 0;
+var b = 0;
+var class_array = [];
+for(;i<marker.length;i++){
+	var temp = [];
+	
+	for(;t < marker[i] ;t++){
+		temp.push(inp[t]);
+	}
+	class_array.push(temp);
+	t = marker[i];
+}
+console.log(class_array);
+
+console.profileEnd();
+
+console.time('Time for second function');
+for(var j=0;j < 100;j++){
+	console.log("World");
+}
+
+ 
+console.timeEnd('Time for second function');
+}
+</script>
+</head>
+<body>
+<input type="button" value="Trace" onclick="measuretheTime();"/>
+</body>
+</html>

@@ -1,0 +1,2 @@
+undefined: __NR_ugetrlimit
+ugetrlimit.test: skipped test: ./ugetrlimit exited with code 77

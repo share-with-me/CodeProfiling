@@ -1,0 +1,2 @@
+undefined: __NR_copy_file_range
+copy_file_range.test: skipped test: ./copy_file_range exited with code 77

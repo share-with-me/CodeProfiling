@@ -1,0 +1,2 @@
+undefined: __NR_mmap && (__arm__ || __i386__ || __m68k__ || (__s390__ && !__s390x__))
+old_mmap.test: skipped test: ./old_mmap exited with code 77

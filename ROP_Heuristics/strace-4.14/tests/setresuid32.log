@@ -1,0 +1,2 @@
+undefined: __NR_setresuid32
+setresuid32.test: skipped test: ./setresuid32 exited with code 77

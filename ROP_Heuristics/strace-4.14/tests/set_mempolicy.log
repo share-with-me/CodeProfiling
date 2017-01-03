@@ -1,0 +1,4 @@
+../strace: umoven: short read (1 < 8) @0x7fb21e346fff
+../strace: umoven: short read (1 < 8) @0x7fb21e340fff
+../strace: umoven: short read (1 < 8) @0x7fb21e33afff
+../strace: umoven: short read (1 < 8) @0x7fb21e334fff

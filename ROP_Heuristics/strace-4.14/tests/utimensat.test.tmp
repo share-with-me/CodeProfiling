@@ -1,0 +1,4 @@
+utimensat(AT_FDCWD, "utimensat\nfilename", NULL, 0) = -1 ENOENT (No such file or directory)
+utimensat(AT_FDCWD, "utimensat\nfilename", [{1480266473, 639140}, {1480266472, 639141}], AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+utimensat(AT_FDCWD, "utimensat\nfilename", [UTIME_NOW, UTIME_OMIT], AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
++++ exited with 0 +++

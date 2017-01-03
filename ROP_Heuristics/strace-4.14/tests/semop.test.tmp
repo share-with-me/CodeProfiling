@@ -1,0 +1,11 @@
+semop(-38177487, NULL, 3735928559) = -1 EINVAL (Invalid argument)
+semop(-38177487, 0xffffffffffffffff, 1) = -1 EINVAL (Invalid argument)
+semop(-38177487, [{64206, -4083, SEM_UNDO|IPC_NOWAIT|0xa6ef}, 0x7fe142ddd000], 2) = -1 EINVAL (Invalid argument)
+semop(2686976, [{0, 1, SEM_UNDO}], 1) = 0
+semop(2686976, [{0, -1, SEM_UNDO}], 1) = 0
+semtimedop(-38177487, NULL, 3735928559, NULL) = -1 EINVAL (Invalid argument)
+semtimedop(2686976, 0x7fe142de3000, 1, 0x7fe142de9000) = -1 EFAULT (Bad address)
+semtimedop(-38177487, [{64206, -4083, SEM_UNDO|IPC_NOWAIT|0xa6ef}, 0x7fe142ddd000], 2, {1, 123456789}) = -1 EINVAL (Invalid argument)
+semtimedop(2686976, [{0, 1, SEM_UNDO}], 1, NULL) = 0
+semtimedop(2686976, [{0, -1, SEM_UNDO}], 1, {1, 123456789}) = 0
++++ exited with 0 +++

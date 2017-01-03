@@ -1,0 +1,2 @@
+undefined: __NR_setfsgid32
+setfsgid32.test: skipped test: ./setfsgid32 exited with code 77

@@ -1,0 +1,2 @@
+undefined: __NR_setfsuid32
+setfsuid32.test: skipped test: ./setfsuid32 exited with code 77

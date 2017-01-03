@@ -1,0 +1,2 @@
+execve("./umovestr", 0x7ffd358d8618, 0x7ffd358d8628) = 0
++++ exited with 0 +++

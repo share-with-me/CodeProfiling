@@ -1,0 +1,36 @@
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<title>Firebug</title>
+<script language="javascript" type="text/javascript">
+ 
+function startDoSomething(){
+console.profile('Measuring time');
+doSomething();
+console.profileEnd();
+}
+function doSomething(){
+func1(1000);
+func1(100000);
+func2(10000);
+func3(1000,10000);
+ 
+}
+function func1(count){
+for(var i=0;i < count;i++){}
+}
+ 
+function func2(count){
+for(var i=0;i < count;i++){}
+}
+ 
+function func3(countThis,countThat){
+for(var i=0;i < countThis;i++){ for(var j=0;j < countThat;j++){} }
+}
+</script>
+</head>
+<body>
+Open the console tab. Click the button below and wait a lit.. <br />
+<input type="button" value="Start" onclick="startDoSomething();"/>
+</body>
+</html>

@@ -1,0 +1,4 @@
+epoll_ctl(-1, EPOLL_CTL_ADD, -2, {EPOLLIN, {u32=4294967295, u64=18446744073709551615}}) = -1 EBADF (Bad file descriptor)
+epoll_ctl(-3, EPOLL_CTL_DEL, -4, 0x7f16fc01eff4) = -1 EBADF (Bad file descriptor)
+epoll_ctl(-1, EPOLL_CTL_MOD, -16, NULL) = -1 EFAULT (Bad address)
++++ exited with 0 +++

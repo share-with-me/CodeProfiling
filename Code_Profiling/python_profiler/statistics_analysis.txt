@@ -1,0 +1,31 @@
+0 [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765]
+1 [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765]
+2 [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765]
+3 [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765]
+4 [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765]
+Fri Sep 23 16:26:07 2016    profile_stats_0.stats
+Fri Sep 23 16:26:07 2016    profile_stats_1.stats
+Fri Sep 23 16:26:07 2016    profile_stats_2.stats
+Fri Sep 23 16:26:07 2016    profile_stats_3.stats
+Fri Sep 23 16:26:07 2016    profile_stats_4.stats
+
+         489 function calls (351 primitive calls) in 0.004 seconds
+
+   Ordered by: cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.004    0.004 profile:0(print 2, fib_seq(20))
+    105/5    0.004    0.000    0.004    0.001 fibon_memo.py:26(fib_seq)
+        5    0.000    0.000    0.004    0.001 <string>:1(<module>)
+       21    0.000    0.000    0.000    0.000 fibon_memo.py:16(fib)
+      105    0.000    0.000    0.000    0.000 :0(append)
+        5    0.000    0.000    0.000    0.000 :0(setprofile)
+        1    0.000    0.000    0.000    0.000 profile:0(print 3, fib_seq(20))
+        1    0.000    0.000    0.000    0.000 profile:0(print 1, fib_seq(20))
+  143/105    0.000    0.000    0.000    0.000 fibon_memo.py:9(__call__)
+        1    0.000    0.000    0.000    0.000 profile:0(print 0, fib_seq(20))
+      100    0.000    0.000    0.000    0.000 :0(extend)
+        0    0.000             0.000          profile:0(profiler)
+        1    0.000    0.000    0.000    0.000 profile:0(print 4, fib_seq(20))
+
+

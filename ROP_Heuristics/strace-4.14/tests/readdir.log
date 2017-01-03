@@ -1,0 +1,2 @@
+undefined: __NR_readdir
+readdir.test: skipped test: ./readdir exited with code 77

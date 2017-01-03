@@ -1,0 +1,2 @@
+rt_tgsigqueueinfo(26137, 26137, SIGUSR1, {si_signo=SIGUSR1, si_code=SI_QUEUE, si_errno=ENOENT, si_pid=26137, si_uid=0, si_value={int=-87097619, ptr=0xdeadbeeffacefeed}}) = 0
++++ exited with 0 +++

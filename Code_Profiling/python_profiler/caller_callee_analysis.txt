@@ -1,0 +1,22 @@
+INCOMING CALLERS:
+   Ordered by: cumulative time
+   List reduced from 13 to 2 due to restriction <'\\(fib'>
+
+Function                   was called by...
+fibon_memo.py:26(fib_seq)  <- <string>:1(<module>)(5)    0.004
+                              fibon_memo.py:26(fib_seq)(100)    0.004
+fibon_memo.py:16(fib)      <- fibon_memo.py:9(__call__)(21)    0.000
+
+
+OUTGOING CALLEES:
+   Ordered by: cumulative time
+   List reduced from 13 to 2 due to restriction <'\\(fib'>
+
+Function                   called...
+fibon_memo.py:26(fib_seq)  -> :0(append)(105)    0.000
+                              :0(extend)(100)    0.000
+                              fibon_memo.py:9(__call__)(105)    0.000
+                              fibon_memo.py:26(fib_seq)(100)    0.004
+fibon_memo.py:16(fib)      -> fibon_memo.py:9(__call__)(38)    0.000
+
+

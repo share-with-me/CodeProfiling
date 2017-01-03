@@ -1,0 +1,2 @@
+ioctl(-1, FS_IOC_FIEMAP, {fm_start=18446744073709551615, fm_length=18446744073709551615, fm_flags=FIEMAP_FLAG_SYNC|FIEMAP_FLAG_XATTR|FIEMAP_FLAG_CACHE|0xfffffff8, fm_extent_count=4294967295}) = -1 EBADF (Bad file descriptor)
++++ exited with 0 +++

@@ -1,0 +1,2 @@
+undefined: __NR_getgid32
+getgid32.test: skipped test: ./getgid32 exited with code 77

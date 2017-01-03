@@ -1,0 +1,5 @@
+msgget(IPC_PRIVATE, IPC_CREAT|0700)     = 98304
+msgsnd(98304, {233811181, "STRACE_STRING\0"}, 14, 0) = 0
+msgrcv(98304, {233811181, "STRACE_STRING\0"}, 14, 233811181, 0) = 14
+msgctl(98304, IPC_RMID, NULL)           = 0
++++ exited with 0 +++

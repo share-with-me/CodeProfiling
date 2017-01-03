@@ -1,0 +1,9 @@
+getsockname(3, {sa_family=AF_UNIX, sun_path="getsockname.socket"}, [110->21]) = 0
+getsockname(3, {sa_family=AF_UNIX, sun_path="getsockname.socket"}, [21]) = 0
+getsockname(3, 0x7f6a2cf1ef92, NULL) = -1 EFAULT (Bad address)
+getsockname(3, NULL, NULL) = -1 EFAULT (Bad address)
+getsockname(3, 0x7f6a2cf1ef92, 0x7f6a2cf25000) = -1 EFAULT (Bad address)
+getsockname(3, {sa_family=AF_UNIX}, [2->21]) = 0
+getsockname(3, {sa_family=AF_UNIX, sun_path="getsockname.so"}, [16->21]) = 0
+getsockname(3, 0x7f6a2cf1eff0, [21]) = -1 EFAULT (Bad address)
++++ exited with 0 +++

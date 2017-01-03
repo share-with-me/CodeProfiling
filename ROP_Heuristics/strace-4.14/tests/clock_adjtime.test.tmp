@@ -1,0 +1,3 @@
+clock_adjtime(CLOCK_MONOTONIC, NULL) = -1 EOPNOTSUPP (Operation not supported)
+clock_adjtime(CLOCK_REALTIME, 0x7fcbca87dfff) = -1 EFAULT (Bad address)
++++ exited with 0 +++

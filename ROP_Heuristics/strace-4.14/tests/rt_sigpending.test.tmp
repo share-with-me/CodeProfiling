@@ -1,0 +1,21 @@
+rt_sigpending(0x7f9c89df6f80, 128) = -1 EINVAL (Invalid argument)
+rt_sigpending(0x7f9c89df6fc0, 64) = -1 EINVAL (Invalid argument)
+rt_sigpending(0x7f9c89df6fe0, 32) = -1 EINVAL (Invalid argument)
+rt_sigpending(0x7f9c89df6ff0, 16) = -1 EINVAL (Invalid argument)
+rt_sigpending([], 8) = 0
+rt_sigpending([], 4) = 0
+rt_sigpending([], 2) = 0
+rt_sigpending([], 1) = 0
+rt_sigpending(0x7f9c89df6fff, 0) = 0
+rt_sigpending(0x7f9c89df6ffc, 8) = -1 EFAULT (Bad address)
+rt_sigpending([HUP], 8) = 0
+rt_sigpending([HUP], 4) = 0
+rt_sigpending([HUP], 2) = 0
+rt_sigpending([HUP], 1) = 0
+rt_sigpending(0x7f9c89df6fff, 0) = 0
+rt_sigpending([HUP INT], 8) = 0
+rt_sigpending([HUP INT], 4) = 0
+rt_sigpending([HUP INT], 2) = 0
+rt_sigpending([HUP INT], 1) = 0
+rt_sigpending(0x7f9c89df6fff, 0) = 0
++++ exited with 0 +++

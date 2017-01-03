@@ -1,0 +1,13 @@
+mincore(0x7ff45b3b1000, 4096, NULL) = -1 EFAULT (Bad address)
+mincore(0x7ff45b3b1000, 4096, [1]) = 0
+mincore(0x7ff45b3b1000, 1, [1]) = 0
+mincore(0x7ff45b3a4000, 8192, NULL) = -1 EFAULT (Bad address)
+mincore(0x7ff45b3a4000, 8192, [11]) = 0
+mincore(0x7ff45b3a4000, 4097, [11]) = 0
+mincore(0x7ff45b36e000, 131072, NULL) = -1 EFAULT (Bad address)
+mincore(0x7ff45b36e000, 131072, [11111111111111111111111111111111]) = 0
+mincore(0x7ff45b36e000, 126977, [11111111111111111111111111111111]) = 0
+mincore(0x7ff45b348000, 135168, NULL) = -1 EFAULT (Bad address)
+mincore(0x7ff45b348000, 135168, [11111111111111111111111111111111...]) = 0
+mincore(0x7ff45b348000, 131073, [11111111111111111111111111111111...]) = 0
++++ exited with 0 +++

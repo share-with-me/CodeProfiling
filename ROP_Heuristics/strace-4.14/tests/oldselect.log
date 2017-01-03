@@ -1,0 +1,2 @@
+undefined: __NR_select && __NR__newselect
+oldselect.test: skipped test: ./oldselect exited with code 77

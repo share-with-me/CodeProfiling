@@ -1,0 +1,2 @@
+rmdir("rmdir_sample") = -1 ENOENT (No such file or directory)
++++ exited with 0 +++

@@ -1,0 +1,5 @@
+28432 chdir("fork-f.start") = -1 ENOENT (No such file or directory)
+28432 chdir("fork-f.parent") = -1 ENOENT (No such file or directory)
+28433 chdir("fork-f.child") = -1 ENOENT (No such file or directory)
+28433 chdir("fork-f.exec") = -1 ENOENT (No such file or directory)
+28432 chdir("fork-f.finish") = -1 ENOENT (No such file or directory)

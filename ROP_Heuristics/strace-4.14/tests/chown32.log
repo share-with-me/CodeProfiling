@@ -1,0 +1,2 @@
+undefined: __NR_chown32
+chown32.test: skipped test: ./chown32 exited with code 77

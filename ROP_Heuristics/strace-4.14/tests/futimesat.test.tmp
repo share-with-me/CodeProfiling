@@ -1,0 +1,4 @@
+futimesat(AT_FDCWD, "futimesat_sample", NULL) = -1 ENOENT (No such file or directory)
+futimesat(-1, NULL, 0x7f21be442ff0) = -1 EFAULT (Bad address)
+futimesat(0, "", [{1480266463, 140235}, {1480266462, 140236}]) = -1 ENOENT (No such file or directory)
++++ exited with 0 +++

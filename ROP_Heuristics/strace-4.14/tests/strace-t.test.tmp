@@ -1,0 +1,2 @@
+22:38:23 execve("./sleep", ["./sleep", "0"], [/* 46 vars */]) = 0
+22:38:23 +++ exited with 0 +++

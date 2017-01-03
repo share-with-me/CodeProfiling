@@ -1,0 +1,9 @@
+accept(3, {sa_family=AF_UNIX, sun_path="accept.socket.connect"}, [110->24]) = 5
+accept(3, {sa_family=AF_UNIX, sun_path="accept.socket.connect"}, [24]) = 7
+accept(3, 0x7ff7b1e7bf92, NULL) = -1 EFAULT (Bad address)
+accept(3, NULL, NULL) = 10
+accept(3, 0x7ff7b1e7bf92, 0x7ff7b1e82000) = -1 EFAULT (Bad address)
+accept(3, {sa_family=AF_UNIX}, [2->24]) = 13
+accept(3, {sa_family=AF_UNIX, sun_path="accept.socket."}, [16->24]) = 15
+accept(3, 0x7ff7b1e7bff0, [24]) = -1 EFAULT (Bad address)
++++ exited with 0 +++

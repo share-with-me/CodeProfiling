@@ -1,0 +1,4 @@
+fchmod(3, 0600) = 0
+fchmod(3, 051) = -1 EBADF (Bad file descriptor)
+fchmod(3, 004) = -1 EBADF (Bad file descriptor)
++++ exited with 0 +++

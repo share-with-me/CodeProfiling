@@ -1,0 +1,103 @@
+
+;; Function helper_function (helper_function, funcdef_no=0, decl_uid=2198, symbol_order=0)
+
+
+Analyzing function body size: helper_function
+
+Inline summary for helper_function/0
+  self time:       13
+  global time:     0
+  self size:       5
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:1.000000, time:2.000000, predicate:(true)
+    size:2.000000, time:0.000000, predicate:(not inlined)
+  calls:
+    __builtin_puts/2 function body not available
+      loop depth: 0 freq:1000 size: 2 time: 11 callee size: 0 stack: 0
+
+helper_function ()
+{
+  int D.2209;
+  int _1;
+
+  <bb 2>:
+  __builtin_puts (&"I am a helper function"[0]);
+  _1 = 42;
+
+<L0>:
+  return _1;
+
+}
+
+
+
+;; Function main (main, funcdef_no=1, decl_uid=2202, symbol_order=1)
+
+
+Analyzing function body size: main
+
+Inline summary for main/1
+  self time:       42
+  global time:     0
+  self size:       16
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:7.000000, time:8.000000, predicate:(true)
+    size:2.000000, time:0.000000, predicate:(not inlined)
+  calls:
+    helper_function/0 function not considered for inlining
+      loop depth: 0 freq:1000 size: 1 time: 10 callee size: 2 stack: 0
+    printf/3 function body not available
+      loop depth: 1 freq:1000 size: 3 time: 12 callee size: 0 stack: 0
+    printf/3 function body not available
+      loop depth: 0 freq:1000 size: 3 time: 12 callee size: 0 stack: 0
+
+main (int argc, char * * argv)
+{
+  int i;
+  int D.2215;
+  char * D.2214;
+  char * * D.2213;
+  long unsigned int D.2212;
+  long unsigned int D.2211;
+  long unsigned int _4;
+  long unsigned int _5;
+  char * * _7;
+  char * _8;
+  int _10;
+
+  <bb 2>:
+  printf ("argc: %i\n", argc_2(D));
+  i_3 = 0;
+  goto <bb 4>;
+
+  <bb 3>:
+  _4 = (long unsigned int) i_1;
+  _5 = _4 * 8;
+  _7 = argv_6(D) + _5;
+  _8 = *_7;
+  printf ("argv[%i]: %s\n", _8);
+  i_9 = i_1 + 1;
+
+  <bb 4>:
+  # i_1 = PHI <i_3(2), i_9(3)>
+  if (i_1 < argc_2(D))
+    goto <bb 3>;
+  else
+    goto <bb 5>;
+
+  <bb 5>:
+  helper_function ();
+  _10 = 0;
+
+<L3>:
+  return _10;
+
+}
+
+

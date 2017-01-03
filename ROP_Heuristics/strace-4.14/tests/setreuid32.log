@@ -1,0 +1,2 @@
+undefined: __NR_setreuid32
+setreuid32.test: skipped test: ./setreuid32 exited with code 77

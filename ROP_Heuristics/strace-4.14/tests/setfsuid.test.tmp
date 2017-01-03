@@ -1,0 +1,19 @@
+setfsuid(0) = 0
+setfsuid(0) = 0
+setfsuid(4294901760) = 0
+setfsuid(0) = 4294901760
+setfsuid(0) = 0
+setfsuid(0) = 0
+setfsuid(65535) = 0
+setfsuid(0) = 65535
+setfsuid(4294967295) = 0
+setfsuid(0) = 0
+setfsuid(4294967295) = 0
+setfsuid(0) = 0
+setfsuid(3235839999) = 0
+setfsuid(0) = 3235839999
+setfsuid(4207869677) = 0
+setfsuid(0) = 4207869677
+setfsuid(3735928559) = 0
+setfsuid(0) = 3735928559
++++ exited with 0 +++

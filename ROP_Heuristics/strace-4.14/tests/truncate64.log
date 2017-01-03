@@ -1,0 +1,2 @@
+undefined: __NR_truncate64
+truncate64.test: skipped test: ./truncate64 exited with code 77

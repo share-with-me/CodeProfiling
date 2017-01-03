@@ -1,0 +1,4 @@
+gettimeofday({1480266473, 834696}, NULL) = 0
+gettimeofday({1480266473, 834761}, {tz_minuteswest=-330, tz_dsttime=0}) = 0
+settimeofday({-1, 1000000000}, {tz_minuteswest=-330, tz_dsttime=0}) = -1 EINVAL (Invalid argument)
++++ exited with 0 +++

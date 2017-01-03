@@ -1,0 +1,33 @@
+getrlimit(RLIMIT_AS, NULL) = -1 EFAULT (Bad address)
+getrlimit(RLIMIT_AS, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+getrlimit(RLIMIT_CORE, NULL) = -1 EFAULT (Bad address)
+getrlimit(RLIMIT_CORE, {rlim_cur=0, rlim_max=RLIM64_INFINITY}) = 0
+getrlimit(RLIMIT_CPU, NULL) = -1 EFAULT (Bad address)
+getrlimit(RLIMIT_CPU, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+getrlimit(RLIMIT_DATA, NULL) = -1 EFAULT (Bad address)
+getrlimit(RLIMIT_DATA, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+getrlimit(RLIMIT_FSIZE, NULL) = -1 EFAULT (Bad address)
+getrlimit(RLIMIT_FSIZE, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+getrlimit(RLIMIT_LOCKS, NULL) = -1 EFAULT (Bad address)
+getrlimit(RLIMIT_LOCKS, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+getrlimit(RLIMIT_MEMLOCK, NULL) = -1 EFAULT (Bad address)
+getrlimit(RLIMIT_MEMLOCK, {rlim_cur=64*1024, rlim_max=64*1024}) = 0
+getrlimit(RLIMIT_MSGQUEUE, NULL) = -1 EFAULT (Bad address)
+getrlimit(RLIMIT_MSGQUEUE, {rlim_cur=800*1024, rlim_max=800*1024}) = 0
+getrlimit(RLIMIT_NICE, NULL) = -1 EFAULT (Bad address)
+getrlimit(RLIMIT_NICE, {rlim_cur=0, rlim_max=0}) = 0
+getrlimit(RLIMIT_NOFILE, NULL) = -1 EFAULT (Bad address)
+getrlimit(RLIMIT_NOFILE, {rlim_cur=64*1024, rlim_max=64*1024}) = 0
+getrlimit(RLIMIT_NPROC, NULL) = -1 EFAULT (Bad address)
+getrlimit(RLIMIT_NPROC, {rlim_cur=15338, rlim_max=15338}) = 0
+getrlimit(RLIMIT_RSS, NULL) = -1 EFAULT (Bad address)
+getrlimit(RLIMIT_RSS, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+getrlimit(RLIMIT_RTPRIO, NULL) = -1 EFAULT (Bad address)
+getrlimit(RLIMIT_RTPRIO, {rlim_cur=0, rlim_max=0}) = 0
+getrlimit(RLIMIT_RTTIME, NULL) = -1 EFAULT (Bad address)
+getrlimit(RLIMIT_RTTIME, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+getrlimit(RLIMIT_SIGPENDING, NULL) = -1 EFAULT (Bad address)
+getrlimit(RLIMIT_SIGPENDING, {rlim_cur=15338, rlim_max=15338}) = 0
+getrlimit(RLIMIT_STACK, NULL) = -1 EFAULT (Bad address)
+getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
++++ exited with 0 +++

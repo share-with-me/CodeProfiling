@@ -1,0 +1,9 @@
+wait4(27701, 0x7fe5618ffffc, WNOHANG|__WALL, NULL) = 0
+wait4(27701, 0x7fe5618ffffc, WNOHANG|__WALL, 0x7fe5618f9f70) = 0
+wait4(27701, [{WIFEXITED(s) && WEXITSTATUS(s) == 42}], 0, {ru_utime={0, 0}, ru_stime={0, 0}, ru_maxrss=628, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=20, ru_majflt=0, ru_nswap=0, ru_inblock=0, ru_oublock=0, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=2, ru_nivcsw=0}) = 27701
+wait4(27702, [{WIFSIGNALED(s) && WTERMSIG(s) == SIGUSR1}], __WALL, {ru_utime={0, 0}, ru_stime={0, 0}, ru_maxrss=572, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=15, ru_majflt=0, ru_nswap=0, ru_inblock=0, ru_oublock=0, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=1, ru_nivcsw=0}) = 27702
+wait4(27703, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGSTOP}], WSTOPPED, {ru_utime={0, 0}, ru_stime={0, 0}, ru_maxrss=100, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=16, ru_majflt=0, ru_nswap=0, ru_inblock=0, ru_oublock=0, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=1, ru_nivcsw=0}) = 27703
+wait4(27703, [{WIFCONTINUED(s)}], WCONTINUED, {ru_utime={0, 0}, ru_stime={0, 0}, ru_maxrss=100, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=16, ru_majflt=0, ru_nswap=0, ru_inblock=0, ru_oublock=0, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=2, ru_nivcsw=0}) = 27703
+wait4(27703, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, {ru_utime={0, 0}, ru_stime={0, 0}, ru_maxrss=700, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=21, ru_majflt=0, ru_nswap=0, ru_inblock=0, ru_oublock=0, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=3, ru_nivcsw=0}) = 27703
+wait4(-1, 0x7fe5618ffffc, WNOHANG|WSTOPPED|__WALL, 0x7fe5618f9f70) = -1 ECHILD (No child processes)
++++ exited with 0 +++

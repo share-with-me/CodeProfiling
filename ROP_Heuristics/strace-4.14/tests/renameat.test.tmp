@@ -1,0 +1,2 @@
+renameat(-1, "renameat_old", -2, "renameat_new") = -1 EBADF (Bad file descriptor)
++++ exited with 0 +++

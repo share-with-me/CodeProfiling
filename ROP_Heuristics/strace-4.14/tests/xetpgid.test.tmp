@@ -1,0 +1,3 @@
+getpgid(27836) = 27826
+setpgid(0, 27836) = 0
++++ exited with 0 +++

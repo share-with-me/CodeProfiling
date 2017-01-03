@@ -1,0 +1,2 @@
+undefined: __NR_getegid32
+getegid32.test: skipped test: ./getegid32 exited with code 77

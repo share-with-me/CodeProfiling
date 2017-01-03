@@ -1,0 +1,2 @@
+undefined: __NR_mlock2
+mlock2.test: skipped test: ./mlock2 exited with code 77

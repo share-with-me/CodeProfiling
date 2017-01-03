@@ -1,0 +1,17 @@
+sendmmsg(1, [{msg_hdr={msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="012", iov_len=3}, {iov_base="34567", iov_len=5}], msg_iovlen=2, msg_controllen=0, msg_flags=0}, msg_len=8}, {msg_hdr={msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="89abcde", iov_len=7}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, msg_len=7}], 2, MSG_DONTROUTE|MSG_NOSIGNAL) = 2
+ = 2 buffers in vector 0
+ * 3 bytes in buffer 0
+ | 00000  30 31 32                                          012              |
+ * 5 bytes in buffer 1
+ | 00000  33 34 35 36 37                                    34567            |
+ = 1 buffers in vector 1
+ * 7 bytes in buffer 0
+ | 00000  38 39 61 62 63 64 65                              89abcde          |
+recvmmsg(0, [{msg_hdr={msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="01234567", iov_len=8}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, msg_len=8}, {msg_hdr={msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="89abcde", iov_len=8}, {iov_base="", iov_len=8}], msg_iovlen=2, msg_controllen=0, msg_flags=0}, msg_len=7}], 2, MSG_DONTWAIT, NULL) = 2
+ = 1 buffers in vector 0
+ * 8 bytes in buffer 0
+ | 00000  30 31 32 33 34 35 36 37                           01234567         |
+ = 2 buffers in vector 1
+ * 7 bytes in buffer 0
+ | 00000  38 39 61 62 63 64 65                              89abcde          |
++++ exited with 0 +++

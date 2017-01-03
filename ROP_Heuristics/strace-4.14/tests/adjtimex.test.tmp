@@ -1,0 +1,3 @@
+adjtimex(NULL) = -1 EFAULT (Bad address)
+adjtimex({modes=0, offset=0, freq=0, maxerror=16000000, esterror=16000000, status=STA_UNSYNC, constant=2, precision=1, tolerance=32768000, time={1480266461, 438527}, tick=10000, ppsfreq=0, jitter=0, shift=0, stabil=0, jitcnt=0, calcnt=0, errcnt=0, stbcnt=0, tai=0}) = 5 (TIME_ERROR)
++++ exited with 0 +++

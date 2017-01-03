@@ -1,0 +1,10 @@
+msgget(0xfdb97531, IPC_EXCL|IPC_NOWAIT|0xface1000|0125) = -1 ENOENT (No such file or directory)
+msgget(IPC_PRIVATE, 0600)               = 32768
+msgctl(-38177487, 0xdeadbeef /* MSG_??? */, NULL) = -1 EINVAL (Invalid argument)
+msgctl(-38177487, IPC_SET, 0xffffffffffffffff) = -1 EINVAL (Invalid argument)
+msgctl(32768, IPC_STAT, {msg_perm={uid=0, gid=0, mode=0600, key=0, cuid=0, cgid=0}, msg_stime=0, msg_rtime=0, msg_ctime=1480266463, msg_qnum=0, msg_qbytes=16384, msg_lspid=0, msg_lrpid=0}) = 0
+msgctl(32768, IPC_SET, {msg_perm={uid=0, gid=0, mode=0600}, ...}) = 0
+msgctl(0, MSG_INFO, 0x7ffca21f28c0)     = 0
+msgctl(32768, MSG_STAT, 0x7ffca21f28c0) = 32768
+msgctl(32768, IPC_RMID, NULL)           = 0
++++ exited with 0 +++

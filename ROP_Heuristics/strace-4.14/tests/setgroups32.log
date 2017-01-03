@@ -1,0 +1,2 @@
+undefined: __NR_setgroups32
+setgroups32.test: skipped test: ./setgroups32 exited with code 77

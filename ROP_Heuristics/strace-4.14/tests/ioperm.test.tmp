@@ -1,0 +1,2 @@
+ioperm(0xdeafbeefffffffff, 0x1, 0) = -1 EINVAL (Invalid argument)
++++ exited with 0 +++

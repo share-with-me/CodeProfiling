@@ -1,0 +1,19 @@
+fsetxattr(-1, NULL, NULL, 0, XATTR_CREATE) = -1 EBADF (Bad file descriptor)
+fsetxattr(-1, NULL, "", 0, XATTR_CREATE) = -1 EBADF (Bad file descriptor)
+fsetxattr(-1, "strace.test", 0x7f777ac70fff, 65537, XATTR_CREATE) = -1 EBADF (Bad file descriptor)
+fsetxattr(-1, "strace.test", 0x7f777ac98ff9, 8, XATTR_CREATE) = -1 EBADF (Bad file descriptor)
+fsetxattr(-1, "strace.test", "foo\0bar", 8, XATTR_REPLACE) = -1 EBADF (Bad file descriptor)
+fsetxattr(-1, "strace.test", "foo\0bar", 7, XATTR_CREATE|XATTR_REPLACE) = -1 EBADF (Bad file descriptor)
+setxattr(".", "strace.test", "foo\0bar", 8, XATTR_CREATE) = -1 EOPNOTSUPP (Operation not supported)
+lsetxattr(".", "strace.test", "foo\0bar", 7, XATTR_CREATE) = -1 EOPNOTSUPP (Operation not supported)
+fgetxattr(-1, "strace.test", 0x7f777ac9f000, 4) = -1 EBADF (Bad file descriptor)
+getxattr(".", "strace.test", 0x7f777ac70fff, 65537) = -1 EOPNOTSUPP (Operation not supported)
+lgetxattr(".", "strace.test", 0x7f777ac71000, 65536) = -1 EOPNOTSUPP (Operation not supported)
+flistxattr(-1, 0x7f777ac9f000, 4) = -1 EBADF (Bad file descriptor)
+llistxattr("", 0x7f777ac9f001, 4) = -1 ENOENT (No such file or directory)
+listxattr(".", 0x7f777ac70fff, 0) = 0
+listxattr(".", "", 65537) = 0
+fremovexattr(-1, "strace.test") = -1 EBADF (Bad file descriptor)
+removexattr(".", "strace.test") = -1 EOPNOTSUPP (Operation not supported)
+lremovexattr(".", "strace.test") = -1 EOPNOTSUPP (Operation not supported)
++++ exited with 0 +++

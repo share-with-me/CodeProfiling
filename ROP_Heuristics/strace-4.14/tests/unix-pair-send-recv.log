@@ -1,0 +1,2 @@
+send: Function not implemented
+unix-pair-send-recv.test: skipped test: ./unix-pair-send-recv abcdefghijklmnopqrstuvwxyz exited with code 77

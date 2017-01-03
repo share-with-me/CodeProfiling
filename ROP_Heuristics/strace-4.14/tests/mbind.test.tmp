@@ -1,0 +1,2 @@
+mbind(NULL, 14627392581506174445, MPOL_INTERLEAVE, 0xfacefeedfffffff1, 16045690985392373746, MPOL_MF_STRICT|MPOL_MF_MOVE|MPOL_MF_MOVE_ALL|0xfffffff8) = -1 EINVAL (Invalid argument)
++++ exited with 0 +++

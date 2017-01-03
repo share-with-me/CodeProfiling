@@ -1,0 +1,18 @@
+writev(1, 0x7f4f995e2000, 42) = -1 EFAULT (Bad address)
+readv(0, 0x7f4f995e2000, 42) = -1 EFAULT (Bad address)
+writev(1, [], 0) = 0
+writev(1, [{iov_base="89abcde", iov_len=7}, 0x7f4f995d0000], 2) = -1 EFAULT (Bad address)
+writev(1, [{iov_base="012", iov_len=3}, {iov_base="34567", iov_len=5}, {iov_base="89abcde", iov_len=7}], 3) = 15
+ * 3 bytes in buffer 0
+ | 00000  30 31 32                                          012              |
+ * 5 bytes in buffer 1
+ | 00000  33 34 35 36 37                                    34567            |
+ * 7 bytes in buffer 2
+ | 00000  38 39 61 62 63 64 65                              89abcde          |
+readv(0, [{iov_base="01234567", iov_len=8}], 1) = 8
+ * 8 bytes in buffer 0
+ | 00000  30 31 32 33 34 35 36 37                           01234567         |
+readv(0, [{iov_base="89abcde", iov_len=8}, {iov_base="", iov_len=15}], 2) = 7
+ * 7 bytes in buffer 0
+ | 00000  38 39 61 62 63 64 65                              89abcde          |
++++ exited with 0 +++

@@ -1,0 +1,13 @@
+mkdirat(-1, "mkdirat", 000) = -1 EBADF (Bad file descriptor)
+mkdirat(-1, "mkdirat", 0177777) = -1 EBADF (Bad file descriptor)
+mkdirat(-1, "mkdirat", 006) = -1 EBADF (Bad file descriptor)
+mkdirat(-1, "mkdirat", 060) = -1 EBADF (Bad file descriptor)
+mkdirat(-1, "mkdirat", 0600) = -1 EBADF (Bad file descriptor)
+mkdirat(-1, "mkdirat", 024) = -1 EBADF (Bad file descriptor)
+mkdirat(-1, "mkdirat", 0100000) = -1 EBADF (Bad file descriptor)
+mkdirat(-1, "mkdirat", 040006) = -1 EBADF (Bad file descriptor)
+mkdirat(-1, "mkdirat", 0120060) = -1 EBADF (Bad file descriptor)
+mkdirat(-1, "mkdirat", 010600) = -1 EBADF (Bad file descriptor)
+mkdirat(-1, "mkdirat", 020024) = -1 EBADF (Bad file descriptor)
+mkdirat(-1, "mkdirat", 067777) = -1 EBADF (Bad file descriptor)
++++ exited with 0 +++

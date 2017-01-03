@@ -1,0 +1,2 @@
+undefined: __NR_waitpid
+waitpid.test: skipped test: ./waitpid exited with code 77

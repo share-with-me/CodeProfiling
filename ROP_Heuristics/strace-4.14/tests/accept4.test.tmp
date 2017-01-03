@@ -1,0 +1,9 @@
+accept4(3, {sa_family=AF_UNIX, sun_path="accept4.socket.connect"}, [110->25], SOCK_CLOEXEC) = 5
+accept4(3, {sa_family=AF_UNIX, sun_path="accept4.socket.connect"}, [25], SOCK_CLOEXEC) = 7
+accept4(3, 0x7fa0f22c2f92, NULL, SOCK_CLOEXEC) = -1 EFAULT (Bad address)
+accept4(3, NULL, NULL, SOCK_CLOEXEC) = 10
+accept4(3, 0x7fa0f22c2f92, 0x7fa0f22c9000, SOCK_CLOEXEC) = -1 EFAULT (Bad address)
+accept4(3, {sa_family=AF_UNIX}, [2->25], SOCK_CLOEXEC) = 13
+accept4(3, {sa_family=AF_UNIX, sun_path="accept4.socket"}, [16->25], SOCK_CLOEXEC) = 15
+accept4(3, 0x7fa0f22c2ff0, [25], SOCK_CLOEXEC) = -1 EFAULT (Bad address)
++++ exited with 0 +++

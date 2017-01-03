@@ -1,0 +1,2 @@
+dup2(-1, -2) = -1 EBADF (Bad file descriptor)
++++ exited with 0 +++

@@ -1,0 +1,9 @@
+recvmsg(3, {msg_name={sa_family=AF_UNIX, sun_path="msg_name-recvmsg.test.send.socket"}, msg_namelen=110->36, msg_iov=[{iov_base="A", iov_len=1}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, MSG_DONTWAIT) = 1
+recvmsg(3, {msg_name={sa_family=AF_UNIX, sun_path="msg_name-recvmsg.test.send.socket"}, msg_namelen=36, msg_iov=[{iov_base="A", iov_len=1}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, MSG_DONTWAIT) = 1
+recvmsg(3, {msg_name=NULL, msg_namelen=36, msg_iov=[{iov_base="A", iov_len=1}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, MSG_DONTWAIT) = 1
+recvmsg(3, {msg_name={sa_family=AF_UNIX}, msg_namelen=2->36, msg_iov=[{iov_base="A", iov_len=1}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, MSG_DONTWAIT) = 1
+recvmsg(3, {msg_name={sa_family=AF_UNIX, sun_path="msg_name-recvm"}, msg_namelen=16->36, msg_iov=[{iov_base="A", iov_len=1}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, MSG_DONTWAIT) = 1
+recvmsg(3, {msg_namelen=36}, MSG_DONTWAIT) = -1 EFAULT (Bad address)
+recvmsg(-1, 0x7fddadf04000, 0) = -1 EBADF (Bad file descriptor)
+recvmsg(-1, NULL, 0) = -1 EBADF (Bad file descriptor)
++++ exited with 0 +++

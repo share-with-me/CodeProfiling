@@ -1,0 +1,2 @@
+undefined: __NR_getresuid32
+getresuid32.test: skipped test: ./getresuid32 exited with code 77

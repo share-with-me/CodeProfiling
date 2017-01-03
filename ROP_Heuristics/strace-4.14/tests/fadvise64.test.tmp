@@ -1,0 +1,2 @@
+fadvise64(-1091568946, -4982091772554768297, 13465671543286714853, 0xdeadca75 /* POSIX_FADV_??? */) = -1 EBADF (Bad file descriptor)
++++ exited with 0 +++

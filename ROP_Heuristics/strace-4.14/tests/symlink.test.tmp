@@ -1,0 +1,2 @@
+symlink("symlink_new", "symlink") = -1 EEXIST (File exists)
++++ exited with 0 +++

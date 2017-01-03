@@ -1,0 +1,13 @@
+mkdir("mkdir", 000) = -1 EEXIST (File exists)
+mkdir("mkdir", 0177777) = -1 EEXIST (File exists)
+mkdir("mkdir", 006) = -1 EEXIST (File exists)
+mkdir("mkdir", 060) = -1 EEXIST (File exists)
+mkdir("mkdir", 0600) = -1 EEXIST (File exists)
+mkdir("mkdir", 024) = -1 EEXIST (File exists)
+mkdir("mkdir", 0100000) = -1 EEXIST (File exists)
+mkdir("mkdir", 040006) = -1 EEXIST (File exists)
+mkdir("mkdir", 0120060) = -1 EEXIST (File exists)
+mkdir("mkdir", 010600) = -1 EEXIST (File exists)
+mkdir("mkdir", 020024) = -1 EEXIST (File exists)
+mkdir("mkdir", 067777) = -1 EEXIST (File exists)
++++ exited with 0 +++

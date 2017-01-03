@@ -1,0 +1,5 @@
+perf_event_open(NULL, -87101427, -1160070233, -1, PERF_FLAG_FD_NO_GROUP|PERF_FLAG_FD_OUTPUT|PERF_FLAG_PID_CGROUP|PERF_FLAG_FD_CLOEXEC|0xfffffffffffffff0) = -1 EINVAL (Invalid argument)
+perf_event_open(0x7f4208c57000, 0, 0, 0, 0) = -1 EFAULT (Bad address)
+perf_event_open(0x7f4208c56f98, -1, -1, 1, PERF_FLAG_FD_CLOEXEC) = -1 EINVAL (Invalid argument)
+perf_event_open(0x7f4208c56f30, -100, 100, -87155115, PERF_FLAG_FD_NO_GROUP|PERF_FLAG_FD_OUTPUT|PERF_FLAG_PID_CGROUP|PERF_FLAG_FD_CLOEXEC) = -1 E2BIG (Argument list too long)
++++ exited with 0 +++

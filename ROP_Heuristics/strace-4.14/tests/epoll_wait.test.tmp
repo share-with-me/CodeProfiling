@@ -1,0 +1,2 @@
+epoll_wait(-1, 0x7ff8358e1ff4, 1, -2) = -1 EBADF (Bad file descriptor)
++++ exited with 0 +++

@@ -1,0 +1,2 @@
+undefined: __NR_userfaultfd && O_CLOEXEC
+userfaultfd.test: skipped test: ./userfaultfd exited with code 77

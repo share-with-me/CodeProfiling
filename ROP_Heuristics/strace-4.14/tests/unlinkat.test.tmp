@@ -1,0 +1,3 @@
+unlinkat(-1, "unlinkat_sample", 0) = -1 EBADF (Bad file descriptor)
+unlinkat(AT_FDCWD, "unlinkat_sample", AT_SYMLINK_NOFOLLOW|AT_REMOVEDIR|AT_SYMLINK_FOLLOW|AT_NO_AUTOMOUNT|AT_EMPTY_PATH|0xffffe0ff) = -1 EINVAL (Invalid argument)
++++ exited with 0 +++

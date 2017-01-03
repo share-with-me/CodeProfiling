@@ -1,0 +1,2 @@
+undefined: __NR_setuid32
+setuid32.test: skipped test: ./setuid32 exited with code 77

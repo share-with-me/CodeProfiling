@@ -1,0 +1,2 @@
+undefined: HAVE_SYNC_FILE_RANGE && __NR_sync_file_range2
+sync_file_range2.test: skipped test: ./sync_file_range2 exited with code 77

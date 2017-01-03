@@ -1,0 +1,2 @@
+undefined: __NR_setregid32
+setregid32.test: skipped test: ./setregid32 exited with code 77

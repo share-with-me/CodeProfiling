@@ -1,0 +1,4 @@
+get_robust_list(27800, [0], [24]) = 0
+set_robust_list(0x7f54c0920fe8, 24) = 0
+get_robust_list(27800, [0x7f54c0920fe8], [24]) = 0
++++ exited with 0 +++

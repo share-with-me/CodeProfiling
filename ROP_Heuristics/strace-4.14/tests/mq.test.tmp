@@ -1,0 +1,5 @@
+mq_open("strace-mq.test", O_RDONLY|O_CREAT, 0700, NULL) = 0
+mq_getsetattr(0, NULL, {mq_flags=O_RDONLY, mq_maxmsg=10, mq_msgsize=8192, mq_curmsg=0}) = 0
+mq_getsetattr(0, {mq_flags=O_RDONLY, mq_maxmsg=10, mq_msgsize=8192, mq_curmsg=0}, NULL) = 0
+mq_unlink("strace-mq.test")             = 0
++++ exited with 0 +++

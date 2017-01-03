@@ -1,0 +1,3 @@
+prctl(PR_SET_SECCOMP, 0xffffffffffffffff /* SECCOMP_MODE_??? */, 0x1, 0x2, 0x3) = -1 EINVAL (Invalid argument)
+prctl(PR_SET_SECCOMP, SECCOMP_MODE_STRICT) = 0
++++ exited with 0 +++

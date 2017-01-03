@@ -1,0 +1,105 @@
+execve("./custom_strace", ["./custom_strace", "-e", "raw=read"], [/* 38 vars */]) = 0
+brk(NULL)                               = 0x14dd000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff543f81000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=135079, ...}) = 0
+mmap(NULL, 135079, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7ff543f60000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\34\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1738176, ...}) = 0
+mmap(NULL, 3844640, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ff5439b8000
+mprotect(0x7ff543b5a000, 2093056, PROT_NONE) = 0
+mmap(0x7ff543d59000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1a1000) = 0x7ff543d59000
+mmap(0x7ff543d5f000, 14880, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ff543d5f000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff543f5f000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff543f5e000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff543f5d000
+arch_prctl(ARCH_SET_FS, 0x7ff543f5e700) = 0
+mprotect(0x7ff543d59000, 16384, PROT_READ) = 0
+mprotect(0x7ff543f83000, 4096, PROT_READ) = 0
+munmap(0x7ff543f60000, 135079)          = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7ff543f5e9d0) = 30670
+wait4(30670, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGSTOP}], 0, NULL) = 30670
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=30670, si_uid=0, si_status=SIGSTOP, si_utime=0, si_stime=0} ---
+ptrace(PTRACE_SETOPTIONS, 30670, NULL, PTRACE_O_TRACESYSGOOD) = 0
+ptrace(PTRACE_SYSCALL, 30670, NULL, SIG_0) = 0
+wait4(30670, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], 0, NULL) = 30670
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=30670, si_uid=0, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+ptrace(PTRACE_PEEKUSER, 30670, 8*ORIG_RAX, [0x3b]) = 0
+write(2, "syscall(59) = ", 14)          = 14
+ptrace(PTRACE_SYSCALL, 30670, NULL, SIG_0) = 0
+wait4(30670, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], 0, NULL) = 30670
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=30670, si_uid=0, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+ptrace(PTRACE_PEEKUSER, 30670, 8*RAX, [0xfffffffffffffffe]) = 0
+write(2, "-2\n", 3)                     = 3
+write(2, "The protectable address location"..., 71) = 71
+ptrace(PTRACE_SYSCALL, 30670, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=30670, si_uid=0, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(30670, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], 0, NULL) = 30670
+ptrace(PTRACE_PEEKUSER, 30670, 8*ORIG_RAX, [0x3b]) = 0
+write(2, "syscall(59) = ", 14)          = 14
+ptrace(PTRACE_SYSCALL, 30670, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=30670, si_uid=0, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(30670, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], 0, NULL) = 30670
+ptrace(PTRACE_PEEKUSER, 30670, 8*RAX, [0xfffffffffffffffe]) = 0
+write(2, "-2\n", 3)                     = 3
+write(2, "The protectable address location"..., 71) = 71
+ptrace(PTRACE_SYSCALL, 30670, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=30670, si_uid=0, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(30670, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], 0, NULL) = 30670
+ptrace(PTRACE_PEEKUSER, 30670, 8*ORIG_RAX, [0x3b]) = 0
+write(2, "syscall(59) = ", 14)          = 14
+ptrace(PTRACE_SYSCALL, 30670, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=30670, si_uid=0, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(30670, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], 0, NULL) = 30670
+ptrace(PTRACE_PEEKUSER, 30670, 8*RAX, [0xfffffffffffffffe]) = 0
+write(2, "-2\n", 3)                     = 3
+write(2, "The protectable address location"..., 71) = 71
+ptrace(PTRACE_SYSCALL, 30670, NULL, SIG_0) = 0
+wait4(30670, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], 0, NULL) = 30670
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=30670, si_uid=0, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+ptrace(PTRACE_PEEKUSER, 30670, 8*ORIG_RAX, [0x3b]) = 0
+write(2, "syscall(59) = ", 14)          = 14
+ptrace(PTRACE_SYSCALL, 30670, NULL, SIG_0) = 0
+wait4(30670, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], 0, NULL) = 30670
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=30670, si_uid=0, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+ptrace(PTRACE_PEEKUSER, 30670, 8*RAX, [0xfffffffffffffffe]) = 0
+write(2, "-2\n", 3)                     = 3
+write(2, "The protectable address location"..., 71) = 71
+ptrace(PTRACE_SYSCALL, 30670, NULL, SIG_0) = 0
+wait4(30670, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], 0, NULL) = 30670
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=30670, si_uid=0, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+ptrace(PTRACE_PEEKUSER, 30670, 8*ORIG_RAX, [0x3b]) = 0
+write(2, "syscall(59) = ", 14)          = 14
+ptrace(PTRACE_SYSCALL, 30670, NULL, SIG_0) = 0
+wait4(30670, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], 0, NULL) = 30670
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=30670, si_uid=0, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+ptrace(PTRACE_PEEKUSER, 30670, 8*RAX, [0xfffffffffffffffe]) = 0
+write(2, "-2\n", 3)                     = 3
+write(2, "The protectable address location"..., 71) = 71
+ptrace(PTRACE_SYSCALL, 30670, NULL, SIG_0) = 0
+wait4(30670, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], 0, NULL) = 30670
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=30670, si_uid=0, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+ptrace(PTRACE_PEEKUSER, 30670, 8*ORIG_RAX, [0x3b]) = 0
+write(2, "syscall(59) = ", 14)          = 14
+ptrace(PTRACE_SYSCALL, 30670, NULL, SIG_0) = 0
+wait4(30670, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], 0, NULL) = 30670
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=30670, si_uid=0, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+ptrace(PTRACE_PEEKUSER, 30670, 8*RAX, [0xfffffffffffffffe]) = 0
+write(2, "-2\n", 3)                     = 3
+write(2, "The protectable address location"..., 71) = 71
+ptrace(PTRACE_SYSCALL, 30670, NULL, SIG_0) = 0
+wait4(30670, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], 0, NULL) = 30670
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=30670, si_uid=0, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+ptrace(PTRACE_PEEKUSER, 30670, 8*ORIG_RAX, [0xe7]) = 0
+write(2, "syscall(231) = ", 15)         = 15
+ptrace(PTRACE_SYSCALL, 30670, NULL, SIG_0) = 0
+wait4(30670, [{WIFEXITED(s) && WEXITSTATUS(s) == 255}], 0, NULL) = 30670
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=30670, si_uid=0, si_status=255, si_utime=0, si_stime=0} ---
+exit_group(0)                           = ?
++++ exited with 0 +++

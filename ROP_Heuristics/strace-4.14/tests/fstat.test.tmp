@@ -1,0 +1,2 @@
+fstat(0, {st_dev=makedev(8, 1), st_ino=1358151, st_mode=S_IFREG|0644, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=0, st_size=43147718418, st_atime=1970/01/01-02:29:17.000000135, st_mtime=1970/01/01-02:29:19.000000246, st_ctime=2016/11/27-22:37:43.020118366}) = 0
++++ exited with 0 +++

@@ -1,0 +1,2 @@
+rt_sigqueueinfo(26083, SIGUSR1, {si_signo=SIGUSR1, si_code=SI_QUEUE, si_pid=26083, si_uid=0, si_value={int=-1159983635, ptr=0xdeadbeefbadc0ded}}) = 0
++++ exited with 0 +++

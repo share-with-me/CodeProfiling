@@ -1,0 +1,20 @@
+io_setup(3735928559, NULL) = -1 EFAULT (Bad address)
+io_setup(2, 0x7f3337041000) = -1 EFAULT (Bad address)
+io_setup(2, [0x7f3337089000]) = 0
+io_submit(0xface1e55deadbeef, -3855172618362687475, NULL) = -1 EINVAL (Invalid argument)
+io_submit(0x7f3337089000, 2, 0x7f3337053000) = -1 EFAULT (Bad address)
+io_submit(0x7f3337089000, -1, 0x7f3337052ff0) = -1 EINVAL (Invalid argument)
+io_submit(0x7f3337089000, 2, [{data=0xfeedface11111111, pread, reqprio=11, fildes=0, buf=0x7f3337088000, nbytes=4096, offset=1004211328502398701}, {data=0xfeedface22222222, pread, reqprio=22, fildes=0, buf=0x7f3337081000, nbytes=8192, offset=1004211331995201549}]) = 2
+io_getevents(0xface1e55deadbeef, -3855172618362687475, -5017539604343590432, 0x7f333703afe0, NULL) = -1 EINVAL (Invalid argument)
+io_getevents(0xface1e55deadbeef, -3855172618362687475, -5017539604343590432, NULL, 0x7f3337035000) = -1 EINVAL (Invalid argument)
+io_getevents(0x7f3337089000, 2, 3, [{data=0xfeedface11111111, obj=0x7f333707bf80, res=4096, res2=0}, {data=0xfeedface22222222, obj=0x7f333707bfc0, res=8192, res2=0}], {0, 123456789}) = 2
+io_cancel(0xface1e55deadbeef, NULL, NULL) = -1 EFAULT (Bad address)
+io_cancel(0x7f3337089000, 0x7f3337059000, 0x7f333703afc0) = -1 EFAULT (Bad address)
+io_cancel(0x7f3337089000, {data=0xdeadbeefbadc0ded, pread, reqprio=99, fildes=-42}, 0x7f333703afc0) = -1 EINVAL (Invalid argument)
+io_submit(0xfacef157beeff00d, -2401050962395463955, NULL) = -1 EINVAL (Invalid argument)
+io_submit(0x7f3337089000, -1, 0x7f333704d000) = -1 EINVAL (Invalid argument)
+io_submit(0x7f3337089000, 1057, [{data=0xbadfacedc0ffeeed, key=3740978896, 61453 /* SUB_??? */, fildes=-553988399}, {key=3740978896, pwrite, reqprio=-16657, fildes=-553988399, str=NULL, nbytes=1161981756646125696, offset=-2401022805662757395, resfd=-556676482, flags=facef157}, {key=3740978896, pwrite, reqprio=-16657, fildes=-553988399, buf=0xbadc0ffeedefaced, nbytes=9264081114510713072, offset=-2401022805662757395}, {key=3740978896, pwrite, reqprio=-16657, fildes=-553988399, str="\0\1\2\3cat test test test 012345678"..., nbytes=40, offset=-2401022805662757395}, {key=3740978896, pwritev, reqprio=-16657, fildes=-553988399, buf=0, nbytes=9264081114510713072, offset=-2401022805662757395}, {NULL}, {0xffffffffffffffff}, 0x7f3337047000]) = -1 EBADF (Bad file descriptor)
+io_submit(0x7f3337089000, 2, [{data=0xfeed11111111face, preadv, reqprio=111, fildes=0, iovec=[{iov_base=0x7f3337088000, iov_len=1024}, {iov_base=0x7f3337088400, iov_len=3072}], offset=1004211328502398701}, {data=0xfeed22222222face, preadv, reqprio=222, fildes=0, iovec=[{iov_base=0x7f3337081000, iov_len=2048}, {iov_base=0x7f3337081800, iov_len=6144}], offset=1004211331995201549}]) = 2
+io_destroy(0xface1e55deadbeef) = -1 EINVAL (Invalid argument)
+io_destroy(0x7f3337089000) = 0
++++ exited with 0 +++

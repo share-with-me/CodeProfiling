@@ -1,0 +1,2 @@
+undefined: __NR_ftruncate64
+ftruncate64.test: skipped test: ./ftruncate64 exited with code 77

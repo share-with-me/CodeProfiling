@@ -1,0 +1,328 @@
+=======================================
+   strace 4.14: tests/test-suite.log
+=======================================
+
+# TOTAL: 328
+# PASS:  275
+# SKIP:  53
+# XFAIL: 0
+# FAIL:  0
+# XPASS: 0
+# ERROR: 0
+
+.. contents:: :depth: 2
+
+SKIP: _newselect
+================
+
+undefined: __NR__newselect
+_newselect.test: skipped test: ./_newselect exited with code 77
+
+SKIP: btrfs-w
+=============
+
+btrfs-w.test: skipped test: $BTRFS_MOUNTPOINT not set
+
+SKIP: btrfs-vw
+==============
+
+btrfs-vw.test: skipped test: $BTRFS_MOUNTPOINT not set
+
+SKIP: caps
+==========
+
+caps.test: framework skip: gawk is not available
+
+SKIP: chown32
+=============
+
+undefined: __NR_chown32
+chown32.test: skipped test: ./chown32 exited with code 77
+
+SKIP: copy_file_range
+=====================
+
+undefined: __NR_copy_file_range
+copy_file_range.test: skipped test: ./copy_file_range exited with code 77
+
+SKIP: fadvise64_64
+==================
+
+undefined: __NR_fadvise64_64
+fadvise64_64.test: skipped test: ./fadvise64_64 exited with code 77
+
+SKIP: fchown32
+==============
+
+undefined: __NR_fchown32
+fchown32.test: skipped test: ./fchown32 exited with code 77
+
+SKIP: fcntl64
+=============
+
+undefined: __NR_fcntl64
+fcntl64.test: skipped test: ./fcntl64 exited with code 77
+
+SKIP: fstat64
+=============
+
+undefined: __NR_fstat64
+fstat64.test: skipped test: ./fstat64 exited with code 77
+
+SKIP: fstatat64
+===============
+
+undefined: __NR_fstatat64
+fstatat64.test: skipped test: ./fstatat64 exited with code 77
+
+SKIP: fstatfs64
+===============
+
+undefined: __NR_fstatfs64
+fstatfs64.test: skipped test: ./fstatfs64 exited with code 77
+
+SKIP: ftruncate64
+=================
+
+undefined: __NR_ftruncate64
+ftruncate64.test: skipped test: ./ftruncate64 exited with code 77
+
+SKIP: getegid32
+===============
+
+undefined: __NR_getegid32
+getegid32.test: skipped test: ./getegid32 exited with code 77
+
+SKIP: geteuid32
+===============
+
+undefined: __NR_geteuid32
+geteuid32.test: skipped test: ./geteuid32 exited with code 77
+
+SKIP: getgid32
+==============
+
+undefined: __NR_getgid32
+getgid32.test: skipped test: ./getgid32 exited with code 77
+
+SKIP: getgroups32
+=================
+
+undefined: __NR_getgroups32
+getgroups32.test: skipped test: ./getgroups32 exited with code 77
+
+SKIP: getresgid32
+=================
+
+undefined: __NR_getresgid32
+getresgid32.test: skipped test: ./getresgid32 exited with code 77
+
+SKIP: getresuid32
+=================
+
+undefined: __NR_getresuid32
+getresuid32.test: skipped test: ./getresuid32 exited with code 77
+
+SKIP: getuid32
+==============
+
+undefined: __NR_getuid32
+getuid32.test: skipped test: ./getuid32 exited with code 77
+
+SKIP: getxxid
+=============
+
+undefined: __NR_getxpid && __NR_getxuid && __NR_getxgid
+getxxid.test: skipped test: ./getxxid exited with code 77
+
+SKIP: ioctl_uffdio
+==================
+
+undefined: __NR_userfaultfd && HAVE_LINUX_USERFAULTFD_H
+ioctl_uffdio.test: skipped test: ./ioctl_uffdio exited with code 77
+
+SKIP: ipc
+=========
+
+undefined: __NR_ipc && HAVE_LINUX_IPC_H
+ipc.test: skipped test: ./ipc exited with code 77
+
+SKIP: lchown32
+==============
+
+undefined: __NR_lchown32
+lchown32.test: skipped test: ./lchown32 exited with code 77
+
+SKIP: llseek
+============
+
+undefined: __NR__llseek
+llseek.test: skipped test: ./llseek exited with code 77
+
+SKIP: lstat64
+=============
+
+undefined: __NR_lstat64
+lstat64.test: skipped test: ./lstat64 exited with code 77
+
+SKIP: membarrier
+================
+
+undefined: __NR_membarrier
+membarrier.test: skipped test: ./membarrier exited with code 77
+
+SKIP: mlock2
+============
+
+undefined: __NR_mlock2
+mlock2.test: skipped test: ./mlock2 exited with code 77
+
+SKIP: old_mmap
+==============
+
+undefined: __NR_mmap && (__arm__ || __i386__ || __m68k__ || (__s390__ && !__s390x__))
+old_mmap.test: skipped test: ./old_mmap exited with code 77
+
+SKIP: oldselect
+===============
+
+undefined: __NR_select && __NR__newselect
+oldselect.test: skipped test: ./oldselect exited with code 77
+
+SKIP: preadv2-pwritev2
+======================
+
+undefined: __NR_preadv2 && __NR_pwritev2
+preadv2-pwritev2.test: skipped test: ./preadv2-pwritev2 exited with code 77
+
+SKIP: readdir
+=============
+
+undefined: __NR_readdir
+readdir.test: skipped test: ./readdir exited with code 77
+
+SKIP: sendfile64
+================
+
+undefined: __NR_sendfile64
+sendfile64.test: skipped test: ./sendfile64 exited with code 77
+
+SKIP: setfsgid32
+================
+
+undefined: __NR_setfsgid32
+setfsgid32.test: skipped test: ./setfsgid32 exited with code 77
+
+SKIP: setfsuid32
+================
+
+undefined: __NR_setfsuid32
+setfsuid32.test: skipped test: ./setfsuid32 exited with code 77
+
+SKIP: setgid32
+==============
+
+undefined: __NR_setgid32
+setgid32.test: skipped test: ./setgid32 exited with code 77
+
+SKIP: setgroups32
+=================
+
+undefined: __NR_setgroups32
+setgroups32.test: skipped test: ./setgroups32 exited with code 77
+
+SKIP: setregid32
+================
+
+undefined: __NR_setregid32
+setregid32.test: skipped test: ./setregid32 exited with code 77
+
+SKIP: setresgid32
+=================
+
+undefined: __NR_setresgid32
+setresgid32.test: skipped test: ./setresgid32 exited with code 77
+
+SKIP: setresuid32
+=================
+
+undefined: __NR_setresuid32
+setresuid32.test: skipped test: ./setresuid32 exited with code 77
+
+SKIP: setreuid32
+================
+
+undefined: __NR_setreuid32
+setreuid32.test: skipped test: ./setreuid32 exited with code 77
+
+SKIP: setuid32
+==============
+
+undefined: __NR_setuid32
+setuid32.test: skipped test: ./setuid32 exited with code 77
+
+SKIP: sigaction
+===============
+
+sigaction.test: framework skip: gawk is not available
+
+SKIP: socketcall
+================
+
+undefined: __NR_socketcall
+socketcall.test: skipped test: ./socketcall exited with code 77
+
+SKIP: stat64
+============
+
+undefined: __NR_stat64
+stat64.test: skipped test: ./stat64 exited with code 77
+
+SKIP: statfs64
+==============
+
+undefined: __NR_statfs64
+statfs64.test: skipped test: ./statfs64 exited with code 77
+
+SKIP: sync_file_range2
+======================
+
+undefined: HAVE_SYNC_FILE_RANGE && __NR_sync_file_range2
+sync_file_range2.test: skipped test: ./sync_file_range2 exited with code 77
+
+SKIP: truncate64
+================
+
+undefined: __NR_truncate64
+truncate64.test: skipped test: ./truncate64 exited with code 77
+
+SKIP: ugetrlimit
+================
+
+undefined: __NR_ugetrlimit
+ugetrlimit.test: skipped test: ./ugetrlimit exited with code 77
+
+SKIP: umount
+============
+
+undefined: __NR_oldumount
+umount.test: skipped test: ./umount exited with code 77
+
+SKIP: unix-pair-send-recv
+=========================
+
+send: Function not implemented
+unix-pair-send-recv.test: skipped test: ./unix-pair-send-recv abcdefghijklmnopqrstuvwxyz exited with code 77
+
+SKIP: userfaultfd
+=================
+
+undefined: __NR_userfaultfd && O_CLOEXEC
+userfaultfd.test: skipped test: ./userfaultfd exited with code 77
+
+SKIP: waitpid
+=============
+
+undefined: __NR_waitpid
+waitpid.test: skipped test: ./waitpid exited with code 77
+

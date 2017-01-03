@@ -1,0 +1,19 @@
+close(3</etc/ld.so.cache>) = 0
+close(3</lib/x86_64-linux-gnu/libc-2.19.so>) = 0
+socket(AF_INET, SOCK_STREAM, IPPROTO_IP) = 3<TCP:[122769]>
+bind(3<TCP:[122769]>, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("127.0.0.1")}, 16) = 0
+listen(3<TCP:[122769]>, 1) = 0
+getsockname(3<TCP:[127.0.0.1:60684]>, {sa_family=AF_INET, sin_port=htons(60684), sin_addr=inet_addr("127.0.0.1")}, [16]) = 0
+getsockopt(3<TCP:[127.0.0.1:60684]>, SOL_TCP, TCP_MAXSEG, [536], [4]) = 0
+socket(AF_INET, SOCK_STREAM, IPPROTO_IP) = 4<TCP:[122770]>
+connect(4<TCP:[122770]>, {sa_family=AF_INET, sin_port=htons(60684), sin_addr=inet_addr("127.0.0.1")}, 16) = 0
+accept(3<TCP:[127.0.0.1:60684]>, {sa_family=AF_INET, sin_port=htons(44520), sin_addr=inet_addr("127.0.0.1")}, [16]) = 5<TCP:[127.0.0.1:60684->127.0.0.1:44520]>
+getpeername(5<TCP:[127.0.0.1:60684->127.0.0.1:44520]>, {sa_family=AF_INET, sin_port=htons(44520), sin_addr=inet_addr("127.0.0.1")}, [16]) = 0
+getpeername(4<TCP:[127.0.0.1:44520->127.0.0.1:60684]>, {sa_family=AF_INET, sin_port=htons(60684), sin_addr=inet_addr("127.0.0.1")}, [16]) = 0
+setsockopt(4<TCP:[127.0.0.1:44520->127.0.0.1:60684]>, SOL_TCP, TCP_MAXSEG, [536], 4) = 0
+sendto(4<TCP:[127.0.0.1:44520->127.0.0.1:60684]>, "text", 4, MSG_DONTROUTE|MSG_DONTWAIT, NULL, 0) = 4
+close(4<TCP:[127.0.0.1:44520->127.0.0.1:60684]>) = 0
+recvfrom(5<TCP:[127.0.0.1:60684->127.0.0.1:44520]>, "text", 4, MSG_WAITALL, NULL, NULL) = 4
+close(5<TCP:[127.0.0.1:60684->127.0.0.1:44520]>) = 0
+close(3<TCP:[127.0.0.1:60684]>) = 0
++++ exited with 0 +++

@@ -1,0 +1,2 @@
+ftruncate(-1, 1004211376030073054) = -1 EBADF (Bad file descriptor)
++++ exited with 0 +++
